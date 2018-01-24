@@ -30,7 +30,7 @@
 \end{proof}
 
 \begin{corollary} \label{l3_cor1}
-	У функции $\zeta(s)$ полюс первого порядка с вычетом 1, поскольку $\displaystyle \underset{1}{Res} \frac{1}{s - 1} = 1$.
+	У функции $\zeta(s)$ полюс первого порядка с вычетом $1$, поскольку $\displaystyle \underset{1}{Res} \frac{1}{s - 1} = 1$.
 \end{corollary}
 
 \begin{lemma} \label{l3_lm7}
@@ -43,7 +43,7 @@
 	$$\frac{\zeta'(s)}{\zeta(s)} = -\sum_{n = 1}^{\infty} \frac{\Lambda(n)}{n^s}$$ 
 	Используя преобразование Абеля с параметрами $\displaystyle a_n = \Lambda(n), g(x) = \frac{1}{x^s}$ и тот факт, что $\displaystyle \sum_{n \leq x} \Lambda(n) = \psi(x)$ получим, что 
 	$$\sum_{n = 1}^{N} \frac{\Lambda(n)}{n^s} = \frac{\psi(N)}{N^s} + s \int_{1}^{N} \frac{\psi(x)}{x^{1 + s}}dx.$$
-	Поскольку мы знаем, что у отношения $\frac{\psi(x)}{x}$ верхний и нижний пределы ограничены, то при $\Re(s) > 1$  $\displaystyle \frac{\psi(N)}{N^{1 + s}} \rightarrow 0 $ при $N \rightarrow \infty$.\\
+	Поскольку мы знаем, что у отношения $\displaystyle \frac{\psi(x)}{x}$ верхний и нижний пределы ограничены, то при $\Re(s) > 1$  $\displaystyle \frac{\psi(N)}{N^{1 + s}} \rightarrow 0 $ при $N \rightarrow \infty$.\\
 	Таким образом, при $N \rightarrow \infty$ пределы выражений $\displaystyle \sum_{n = 1}^{N} \frac{\Lambda(n)}{n^s}$ и  $\displaystyle s \int_{1}^{N} \frac{\psi(x)}{x^{1 + s}}dx$ существуют и равны, откуда следует утверждение леммы.
 \end{proof}
 
@@ -53,7 +53,7 @@
 \end{lemma}
 \begin{proof}
 	Положим $M = |(1 - r)^3 (1 - re^{i \phi})^4 (1 - r e^{2 i \phi})|$. Тогда 
-	$$\ln M = 3 \ln |1 - r| + 4 \ln |1 - re^{i \phi}| + \ln |1 - r e^{2 i \phi}| = \Re \left( 3 \ln (1 - r) + 4 \ln (1 - re^{i \phi}) + \ln (1 - r e^{2 i \phi}) \right) = $$
+	$$\ln(M) = 3 \ln( |1 - r|) + 4 \ln (|1 - re^{i \phi}|) + \ln (|1 - r e^{2 i \phi}|) = \Re \left( 3 \ln (1 - r) + 4 \ln (1 - re^{i \phi}) + \ln (1 - r e^{2 i \phi}) \right) = $$
 	$$ = - \sum_{n = 1}^{\infty} \frac{r^n}{n} \Re \left( 3 + 4e^{i n \phi} + e^{2 i n \phi} \right) = - \sum_{n = 1}^{\infty} \frac{r^n}{n} \left( \cos 2n\phi + 4 \cos n\phi + 3 \right) = - \sum_{n = 1}^{\infty} \frac{r^n}{n} 2 \left( \cos n \phi + 1 \right)^2 \leq 0.$$
 	Следовательно, $M \leq 1$.
 \end{proof}

@@ -77,7 +77,7 @@
 	Положим $\displaystyle f_n(x) = q^n \frac{x^n (\pi - x)^n}{n!} = \frac{x^n (q - px)^n}{n!} = \frac{q(x)}{n!}$, где $g(x) \in \mathbb{Z}[x]$.\\
 	Рассмотрим $\displaystyle I_n = \int_{0}^{\pi} f_n(x) \sin(x) dx$, $I_n \geq 0$.\\
 	Положим $\displaystyle F_n(x) = f_n(x) - f_n''(x) + f_n^{(4)}(x) + \ldots = \sum_{k = 0}^{\infty} (-1)^k f_n^{(2k)}(x)$.\\
-	Поскольку $f_n(x) = f_n(\pi - x)$, то $f_n^{(k)}(x) = f_n^{(k)}(\pi - x)$ для четных $k$. Из этого мы видим, что $F_n(x) = F_n(\pi - x)$.\\
+	Поскольку $f_n(x) = f_n(\pi - x)$, то $f_n^{(k)}(x) = f_n^{(k)}(\pi - x)$ для чётных $k$. Из этого мы видим, что $F_n(x) = F_n(\pi - x)$.\\
 	Заметим, что $\left( F_n'(x) \sin x - F_n(x) \cos x\right)' = f_n(x) \sin x$.\\
 	$I_n = \left(F_n'(x) \sin x - F_n(x) \cos x \right)_{0}^{\pi} = F_n(0) + F_n(\pi)$.\\
 	$$|f(x) \sin x| \leq \frac{b^n \left( \frac{\pi}{2}\right)^{2n}}{n!} \rightarrow 0 \text{ при } n \rightarrow \infty,$$
