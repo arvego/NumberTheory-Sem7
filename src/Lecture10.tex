@@ -2,11 +2,11 @@
 \begin{theorem}
 	Число $e$ трансцендентно.
 \end{theorem}
-\begin{proof}
+\begin{pf}
 	Предположим противное: пусть $\displaystyle \exists a_0,\dots,a_m \in \mathbb{Z}: \ \sum\limits_{k=0}^m a_ke^k = 0$, где не все $a_k = 0$. 
 	Считаем, что $\left( a_0, \dots, a_m \right)=1$. Ортогональным дополнением к $\left( a_0, \dots, a_m \right)$ является полуплоскость $\Pi$, проходящая через $\left( 1, e, e^2, \dots, e^m \right)$. При этом в гиперплоскости можно выбрать базис из целочисленных векторов.\\
 	Разбиваем все точки $\mathbb{Z}^{m+1}$ на параллельные слои $\mathbb{Z}^m$ (любое $b \in \mathbb{Z}^{m+1}$ лежит в слое с номером $\langle a,b \rangle$). Расстояние между слоями одинаковое и (при условии, что $(a_0,\dots,a_m) = 1$) оно равно $\displaystyle \Delta = \frac{1}{\sqrt{a_0^2 + a_1^2 +\dots+ a_m^2}}$. Построим последовательность $\mathcal{B}^{(n)} \in \mathbb{Z}^{m+1}$ такую, что
-	\begin{enumerate}
+	\begin{enumerate}[nolistsep]
 		\item[1)] расстояние от $\mathcal{B}^{(n)}$ до $\langle \left(1,e,e^2,\dots,e^m\right) \rangle$ меньше $\Delta$,
 		\item[2)] точка $\mathcal{B}^{(n)}$ не лежит в $\Pi$.
 	\end{enumerate}
@@ -21,7 +21,7 @@
 	Покажем, наконец, что для бесконечно многих $\displaystyle n \ \sum\limits_{k=0}^m a_k \mathcal{B}_k^{(n)} \ne 0$ (то есть, что $\mathcal{B}^{(n)} \not\in \Pi$):
 	$$\sum\limits_{k=0}^m a_k \mathcal{B}_k^{(n)} \equiv a_0(-1)^{mn}m!^n \ (\mathrm{mod} \ n).$$
 	Тогда при $\left(n, \ a_0m! \right) = 1$, где $a_0m!$ -- некоторое фиксированное число, ряд будет не равен нулю.
-\end{proof}
+\end{pf}
 
 \newpage
 
@@ -51,24 +51,24 @@
 	Пусть $f(x,y) \in R[x,y]$. Тогда 
 	$\displaystyle \exists g(x, y_1, \dots, y_m) \in R[x, y_1, \dots, y_m]: \ f(x,y_1)\cdot...\cdot f(x,y_m) = g(x,s_1(y_1,\dots,y_m),\dots,s_m(y_1,\dots,y_m))$.
 \end{lemma}
-\begin{proof}
+\begin{pf}
 	$f(x,y_1) \cdot ... \cdot f(x, y_m) \in R[x][y_1,\dots,y_m]$, т.е. он симметричный по $y_1,\dots,y_m$ над $R[x]$. По Теореме \ref{l10_thSymm} существует искомый многочлен $g$, причём $g$ -- многочлен от $(x,y_1,\dots,y_m$ над $R$.
 	%$\exists g \in R[x][yy_1,\dots,y_m]: \  g\left( s_1\left( y_1, \dots, y_m \right), \dots, s_m\left( y_1, \dots, y_m \right) \right) = 0$.
-\end{proof}
+\end{pf}
 
 \begin{lemma} \label{l10_lm2}
 	Пусть $f(x,y) \in \mathbb{Q}[x,y], \, \alpha \in \mathbb{A}, \, \deg\alpha = n, \, \alpha_1 = \alpha, \, \alpha_2,\dots,\alpha_n$ -- корни $p_\alpha(x)$\footnote{Они попарно различны как корни любого неприводимого многочлена $f(x)$. Иначе бы у $f'(x)$ и $f(x)$ был этот корень общим, но $\deg(f') < \deg(f)$ -- противоречие с неприводимостью.}. Тогда $F(x) = \prod\limits_{k=1}^n f(x,\alpha_k) \in \mathbb{Q}[x]$.
 \end{lemma}
-\begin{proof}
+\begin{pf}
 	Применим Лемму \ref{l10_lm1}:
 	$$\prod\limits_{k=1}^n f(x, \alpha_k) = g\left( s_1\left( \alpha_1, \dots, \alpha_n \right), \dots, s_n\left( \alpha_1, \dots, \alpha_n \right) \right).$$
 	По теореме Виета все $s_i(\alpha_1,\dots,\alpha_n)$ выражаются через коэффициенты многочлена $p_\alpha$ и, следовательно, $s_i(\alpha_1,\dots,\alpha_n) \in \mathbb{Q}$.
-\end{proof}
+\end{pf}
 
 \begin{theorem} \label{l10_th1}
 	$\mathbb{A}$ -- поле.
 \end{theorem}
-\begin{proof}
+\begin{pf}
 	Пусть $\alpha, \beta \in \mathbb{A}$. Хотим проверить что $\{ \alpha @ \beta \vert @ \in \{+, -, /, \cdot \} \}$.\\
 	\textit{Сложение:}\\
 	Рассмотрим $\displaystyle F_1(x) = \prod\limits_{k=1}^m p_\alpha\left( x-\beta_k \right)$, где $\beta_1 = \beta, \, \beta_2,\dots,\beta_m$ -- корни $p_\beta(x)$. Тогда по Лемме \ref{l10_lm2}: $F_1(x) \in \mathbb{Q}[x]$. При этом $\displaystyle F_1(\alpha + \beta) = \dots \cdot p_\alpha(\alpha) \cdot \dots = 0$.\\
@@ -78,4 +78,4 @@
 	$\displaystyle F_3(x) = \prod\limits_{k=1}^m p_\alpha\left( x\beta_k \right) \in \mathbb{Q}[x], \, F_3\left( \frac{\alpha}{\beta} \right) = 0$.\\
 	\textit{Умножение:}\\
 	$\displaystyle F_4(x) = \prod\limits_{k=1}^m \beta_k^m p_\alpha\left( \frac{x}{\beta_k} \right) \in \mathbb{Q}[x], \, F_4\left( \alpha\beta \right) = 0$.
-\end{proof}
+\end{pf}

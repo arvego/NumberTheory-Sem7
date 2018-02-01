@@ -1,16 +1,16 @@
 \begin{lemma} \label{l5_lm14}
 	Если $|s| = R$, то $\displaystyle \frac{s}{R^2} + \frac{1}{s} = \frac{2 \Re(s)}{R^2}$
 \end{lemma}
-\begin{proof}~\\
+\begin{pf}~\\
     $\displaystyle \frac{s}{R^2} + \frac{1}{s} = \frac{1}{R} \left( \frac{s}{R} + \frac{R}{s} \right) = \frac{1}{R} \cdot 2 \Re\left(\frac{s}{R}\right) = \frac{2 \Re(s)}{R^2}$.
-\end{proof} 
+\end{pf} 
 
 \begin{lemma} \label{l5_lm15}
     При $T > 1$ и $x \in \mathbb{R}$ выполнено $\displaystyle x T^{-x} \leq \frac{1}{e \ln(T)}$.
 \end{lemma}
-\begin{proof}
+\begin{pf}
 	Считаем производную $\displaystyle (x T^{-x})' = (1 - x \ln(T))T^{-x}$.  Она обращается в $0$ в точке $\displaystyle x_0 = \frac{1}{\ln(T)}$. Ну и несложно видеть, что функция при $x < x_0$ возрастает, при $x > x_0$ убывает, значит максимум значения функции равен $\displaystyle \frac{1}{\ln (T)} T^{-\frac{1}{\ln(T)}} = \frac{1}{e \ln(T)}$.
-\end{proof}
+\end{pf}
 
 Положим  
 $\displaystyle \Gamma_1 = \Gamma \cap \lbrace s \in \mathbb{C} | \Re(s) \geq 0\rbrace$, 
@@ -22,7 +22,7 @@ $$I_2(T) = I_3(T) - I_4(T) = \frac{1}{2 \pi i} \int_{\Gamma_2} F(1 + s) T^{\sigm
 По Лемме \ref{l4_lm13}, $I_4(T)$ оценивается точно так же, как и $I_1(T)$, только надо заменить контур $\Gamma_1$ на $\Gamma_3$. Это можно сделать, так как у подынтегральной функции нет полюсов вне контура $\Gamma_3 \cup \Gamma_2$ (полюс только $0$). Таким образом, $|I_4(T)| \leq A \epsilon$.\\
 Осталось оценить $\displaystyle I_3(T) = \int_{\Gamma_2} F(1 + s) T^s \left( \frac{s}{R^2} + \frac{1}{s}\right)$.\\
 Заметим, что
-\begin{enumerate}
+\begin{enumerate}[nolistsep]
 	\item на малых дугах $\displaystyle \left| T^s \left( \frac{s}{R^2} + \frac{1}{s} \right) \right| = \frac{2 \sigma}{R^2} T^{\sigma}  \underset{\text{Лемма \ref{l5_lm14}}}{=} \frac{2 \sigma T^{-|\sigma|}}{R^2} \underset{\text{Лемма \ref{l5_lm15}}}{\leq} \frac{2}{R^2} \frac{1}{e \ln(T)}$;
 	\item на вертикальном отрезке $T^s = T^{-h}$;
 	\item на $\Gamma_2$ верно $\displaystyle |F(1 + s) \left( \frac{s}{R^2} + \frac{1}{s} \right)| \leq C = C(\epsilon)$ -- не зависит от $T$.
@@ -46,7 +46,7 @@ $$I_2(T) = I_3(T) - I_4(T) = \frac{1}{2 \pi i} \int_{\Gamma_2} F(1 + s) T^{\sigm
 \subsection{Свойства характеров}
 \begin{definition}
     Пусть $m \in \mathbb{N}, m \geq 2$. Функция $\chi : \mathbb{Z} \rightarrow \mathbb{C}$ называется\textit{ числовым характером (Дирихле) по модулю $m$}, если 
-    \begin{enumerate}
+    \begin{enumerate}[nolistsep]
         \item $\forall a \in \mathbb{Z}$ выполняется $\chi(a + m) = \chi(a)$;
         \item $\chi(a) = 0 \Leftrightarrow (a, m) \ne 1$;
         \item $\chi(ab) = \chi(a) \chi(b)$.

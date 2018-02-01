@@ -1,6 +1,7 @@
 \documentclass[11pt]{article}
-\usepackage[utf8]{inputenc}	% Para caracteres en español
-\usepackage[russian]{babel}
+\usepackage[utf8]{inputenc}	
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
 \usepackage{multirow,booktabs}
 \usepackage[table]{xcolor}
@@ -43,36 +44,28 @@
 \hoffset=-1.5cm
 \topmargin=-25mm
 
-\hypersetup{
-    colorlinks,
-    citecolor=green,
-    filecolor=red,
-    linkcolor=red,
-    urlcolor=blue
-}
-
-
-\begin{document}
-\title{Лекции по теории чисел}
-
 \theoremstyle{plain}
 \newtheorem{theorem}{Теорема}[section]
 \newtheorem{hypothesis}{Гипотеза}[section]
-\newtheorem{lemma}[theorem]{Лемма}
-\newtheorem{proposition}[theorem]{Предложение}
-\newtheorem{corollary}{Следствие}
+\newtheorem{lemma}{Лемма}[section]
+\newtheorem{proposition}{Предложение}[section]
+\newtheorem{corollary}{Следствие}[section]
 \newtheorem*{note}{Замечание}
 \newtheorem{problem}{Задача}[section]
 \newtheorem*{test}{Признак}
 
 \theoremstyle{definition}
-\newtheorem{definition}{Определение}[subsection]
+\newtheorem{definition}{Определение}[section]
 \newtheorem{example}{Пример}[section]
 \newtheorem{statement}{Утверждение}[section]
 
 \theoremstyle{remark}
 \newtheorem*{rem}{Замечание}
 
+\newenvironment{pf}
+  {\par\noindent{\it Доказательство.}}
+  {\hfill$\scriptstyle\blacksquare$~\\}
+  
 \newenvironment{solution}
   {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Решение]}
   {\end{proof}}
@@ -85,6 +78,19 @@
 
 \renewcommand{\Re}{\Ree}
 \renewcommand{\Im}{\Imm}
+
+\hypersetup{
+    colorlinks,
+    citecolor=green,
+    filecolor=red,
+    linkcolor=red,
+    urlcolor=blue
+}
+
+
+\begin{document}
+\title{Лекции по теории чисел}
+
 
 \thispagestyle{empty}
 

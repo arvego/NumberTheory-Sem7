@@ -3,16 +3,16 @@
 	Рассмотрим многочлен $f(x)=f_n(x) = (x-\beta_0)^n(x-\beta_1)^{n+1}\dots(x-\beta_m)^{n+1}$, пусть $\displaystyle g(x) = \frac{1}{n!}\sum\limits_{l \geq n} f^{(n)}(x)$ (с некоторого $l$ они все станут равны нулю). Тогда
 	$$\left| \sum\limits_{k=0}^m b_kg(\beta_k) \right| \leq \frac{c^{n+1}}{n!}, \ \text{ где } c=c(b_0,\dots,b_m,\beta_0,\dots,\beta_m) \text{ -- не зависит от } n.$$
 \end{lemma}
-\begin{proof}
+\begin{pf}
 	Положим $\displaystyle F(x) = \sum\limits_{l \geq 0} f^{(l)}(x)$. Нужно доказать, что $\displaystyle \left| \sum\limits_{k=0}^m b_kF(\beta_k) \right| \leq c^{n+1}$. 
 	Заметим, что $\displaystyle F(0)e^{\beta_k} - F(\beta_k) = e^{\beta_k} \int_0^{\beta_k}e^{-z}f(z)dz$ (по частям).\\
 	Домножим на $b_k$ и просуммируем по $k$ от $0$ до $m$:\\
 	$\displaystyle F(0)\sum_{k=0}^m b_ke^{\beta_k} - \sum\limits_{k=0}^m b_kF(\beta_k) = \sum\limits_{k=0}^m \left[ b_k\int_0^{\beta_k} e^{\beta_k-z}f(z)dz \right]$ -- хотим оценить модуль правой части.
 	$$\left| \sum\limits_{k=0}^m \left[ b_k\int_0^{\beta_k} e^{\beta_k-z}f(z)dz \right] \right| \leq \sum\limits_{k=0}^m |b_k|e^r \cdot (2r)^{(m+1)(n+1)} \leq c^{n+1}, \ \text{где } r=\max\limits_{0\leq k \leq m} \lvert \beta_k \rvert$$
 	$$\text{для } c=(2r)^{m+1}e^r\cdot\max\left( 1, \, \sum\limits_{k=0}^m \lvert b_k \rvert \right).$$
-\end{proof}
+\end{pf}
 
-\begin{proof} (теоремы об экспоненциальной линейной форме (Т.Э.Л.Ф.)).\\
+\begin{pf} (теоремы об экспоненциальной линейной форме (Т.Э.Л.Ф.)).\\
 	Пусть $E$ -- нормальное расширение поля $\mathbb{Q}$, содержащее $a_0,\dots,a_m,\alpha_0,\dots,\alpha_m, \ [E \colon \mathbb{Q}] = \nu$, $\sigma_1,\dots,\sigma_\nu$ -- все автоморфизмы $E$ над $\mathbb{Q}$ (аналогично доказательству теоремы \ref{l13_th10} о Т.Э.Л.Ф. $\Rightarrow$ Т.Л.--В.). 
 	Можно считать, что $a_0, \dots, a_m \in \mathbb{Z}_A \ (\in \mathbb{Z}_E)$, так как существует $\tilde{d} \in \mathbb{Z} \backslash \{ 0 \}$ такое, что все $\tilde{d}a_0, \, \tilde{d}a_1, \dots, \tilde{d}a_m \in \mathbb{Z}_A$. От замены то, что дано, и то. что требуется доказать, не поменяется.\\
 	Пусть $d \in \mathbb{N}$ -- такое, что $d\alpha_0, \, d\alpha_1, \dots, d\alpha_m \in \mathbb{Z}_E$. Предположим противное: пусть $A(1)=0$. Тогда продлеваем наши автоморфизмы $\sigma_1, \dots, \sigma_\nu$ на $E[[x]]$ как в доказательстве теоремы о Т.Э.Л.Ф $\Rightarrow$ Т.Л.--В. То есть можно рассматривать $(\sigma_iA)(x)$.\\
@@ -30,23 +30,23 @@
 	Итак, все $\sigma_i(I) \in \mathbb{Z}_E, \, \sigma_i(I) \ne 0$ при "хороших" $n, \, \sigma_i(I) \to 0$ при $n \to \infty$.\\
 	Следовательно, $\displaystyle N(I) = \prod\limits_{i=1}^\nu \sigma_i(I) \to 0$ при $n \to \infty$ и $N(I) \ne 0$ при "хороших" $n$. Но $N(I) \in \mathbb{Z}$! 
 	Противоречие.
-\end{proof}
+\end{pf}
 
 \begin{corollary}[из теоремы Л.--В.] \label{l14_cor1}
 	Если $\alpha \in \mathbb{A} \backslash \{ 0 \}$, то $e^\alpha \not\in \mathbb{A}$.
 \end{corollary}
-\begin{proof}
+\begin{pf}
 	Пусть $\alpha_0 =0, \, \alpha_1=\alpha$. По теореме Л.--В. $e^{\alpha_0}=1$ и $e^{\alpha_1}=e^\alpha$ линейно независимы над $\mathbb{A}$.
-\end{proof}
+\end{pf}
 
 \begin{corollary} \label{l14_cor2}
 	Число $\pi$ -- трансцендентно.
 \end{corollary}
-\begin{proof}
+\begin{pf}
 	Предположим противное. Тогда $\alpha_0 = 0, \, \alpha_1 = i\pi$. По теореме Л.--В. 
 	$e^{\alpha_0} = 1, \, e^{\alpha_1} = -1$ линейно независимы над $\mathbb{A}$, но они линейно зависимы. 
 	Противоречие.
-\end{proof}
+\end{pf}
 
 \begin{corollary} \label{l14_cor3}
 	Если $\alpha \in \mathbb{A} \backslash \{ 1 \}$, то $\ln(\alpha) \not\in \mathbb{A}$.
@@ -55,16 +55,16 @@
 \begin{corollary} \label{l14_cor4}
 	Если $\alpha \in \mathbb{A} \backslash \{ 0 \}$, то $\sin(\alpha),\,\cos(\alpha),\,\tg(\alpha) \not\in \mathbb{A}$.
 \end{corollary}
-\begin{proof}
+\begin{pf}
 	$\sin(\alpha) = \frac{1}{2i}e^{i\alpha}-\frac{1}{2i}e^{-i\alpha}$. $i\alpha \ne -i\alpha$ и принадлежит $\mathbb{A} \ \Rightarrow \ $ для $0,\,i\alpha,-i\alpha$ по теореме Л.--В. 
 	$1,\,e^{i\alpha},\,e^{-i\alpha}$ ЛНЗ, а если бы $\sin(\alpha) \in \mathbb{A}$, то это было бы ЛЗ.
-\end{proof}
+\end{pf}
 
 \begin{corollary} \label{l14_cor5}
 	Если $\beta_1,\dots,\beta_k \in \mathbb{A}$ ЛНЗ над $\mathbb{Q}$, то $e^{\beta_1},\dots,e^{\beta_k}$ -- алгебраически независимы над $\mathbb{A}$.
 \end{corollary}
-\begin{proof}
+\begin{pf}
 	Пусть $f(x_1,\dots,x_k) \in \mathbb{A}[x_1,\dots,x_k]$. Тогда $\displaystyle f(e^{\beta_1},\dots,e^{\beta_k}) = \\ = \sum\limits_{(n_1,\dots,n_k)} a_{n_1\dots n_k}e^{n_1\beta_1+...+n_k\beta_k} =: \alpha_{n_1\dots n_k}$ -- все попарно различны, т.к. 
 	$\beta_1,\dots,\beta_k$ ЛНЗ над $\mathbb{Q}$. По теореме Л.--В. 
 	$e^{n_1\beta_1+...+n_k\beta_k}$ ЛНЗ над $\mathbb{A}$, следовательно, вся сумма не обращается в ноль.
-\end{proof}
+\end{pf}
