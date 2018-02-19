@@ -3,35 +3,35 @@
 \end{definition}
 
 \begin{lemma} \label{l13_lm6}
-	Пусть $E$ -- конечное расширение $\mathbb{Q}$, $\sigma$ -- вложение $E$ в $C$. Пусть $\sigma(E) \subset E$. Тогда $\sigma(E) = E$.
+	Пусть $E$ — конечное расширение $\mathbb{Q}$, $\sigma$ — вложение $E$ в $C$. Пусть $\sigma(E) \subset E$. Тогда $\sigma(E) = E$.
 \end{lemma}
 
 \begin{pf}
-	$E$ -- конечномерное линейное пространство над $\mathbb{Q}$, $\sigma: E \rightarrow E$ -- линейное отображение с нулевым ядром. Следовательно, $\dim \sigma(E) = \dim E$ и $\sigma(E) = E$.
+	$E$ — конечномерное линейное пространство над $\mathbb{Q}$, $\sigma: E \rightarrow E$ — линейное отображение с нулевым ядром. Следовательно, $\dim \sigma(E) = \dim E$ и $\sigma(E) = E$.
 \end{pf}
 
 \begin{example}~\
 	\begin{itemize}[nolistsep]
-		\item $\mathbb{Q}(\sqrt{2})$ -- нормально;
-		\item $\mathbb{Q}(\sqrt[3]{2})$ -- не нормально.
+		\item $\mathbb{Q}(\sqrt{2})$ — нормально;
+		\item $\mathbb{Q}(\sqrt[3]{2})$ — не нормально.
 	\end{itemize}
 \end{example}
 
 \begin{theorem} \label{l13_th8}
-	Пусть $E = \mathbb{Q}(\alpha_1, \ldots, \alpha_m)$ и пусть все сопряженные ко всем $\alpha_i$ лежат в $E$. Тогда $E$ -- нормально.
+	Пусть $E = \mathbb{Q}(\alpha_1, \ldots, \alpha_m)$ и пусть все сопряженные ко всем $\alpha_i$ лежат в $E$. Тогда $E$ — нормально.
 \end{theorem}
 \begin{pf}
 	Пусть $\alpha \in E$. Тогда $\alpha = \frac{f(\alpha_1, \ldots, \alpha_m)}{g(\alpha_1, \ldots, \alpha_m)}, f, g \in \mathbb{Q}[x_1, \ldots, x_m]$.\\
-	Если $\sigma$ -- вложение $E$ в $\mathbb{C}$, то $\sigma(\alpha) = \frac{f(\sigma(\alpha_1), \ldots, \sigma(\alpha_m))}{g(\sigma(\alpha_1), \ldots, \sigma(\alpha_m))} \in E$.\\
+	Если $\sigma$ — вложение $E$ в $\mathbb{C}$, то $\sigma(\alpha) = \frac{f(\sigma(\alpha_1), \ldots, \sigma(\alpha_m))}{g(\sigma(\alpha_1), \ldots, \sigma(\alpha_m))} \in E$.\\
 	Таким образом, $\sigma(E) \subset E$. Применяя лемму \ref{l13_lm6} получаем, что $\sigma(E) = E$, т.е. $E$ нормально.
 \end{pf}
 
-Если $E$ нормально, то все вложения $E$ в $\mathbb{C}$ -- автоморфизмы $E$. Можно брать их композиции, существует обратный элемент. Получается группа автоморфизмов $E$, называемой \textit{группой Галуа}.
+Если $E$ нормально, то все вложения $E$ в $\mathbb{C}$ — автоморфизмы $E$. Можно брать их композиции, существует обратный элемент. Получается группа автоморфизмов $E$, называемой \textit{группой Галуа}.
 \begin{example}
 	Группа Галуа $\mathbb{Q}(\sqrt{2})$ изоморфна $\mathbb{Z}_2$.
 \end{example}
 
-Пусть $E$ -- конечное расширение $\mathbb{Q}, [E:\mathbb{Q}] = n$, $\sigma_1, \ldots, \sigma_n$ -- все вложения $E$ в $\mathbb{C}$.
+Пусть $E$ — конечное расширение $\mathbb{Q}, [E:\mathbb{Q}] = n$, $\sigma_1, \ldots, \sigma_n$ — все вложения $E$ в $\mathbb{C}$.
 
 \begin{definition}
 	Для каждого  $\alpha \in E$ \textit{нормой относительно $E$}  называется величина\\
@@ -61,7 +61,7 @@
 
 \subsection{Трансцендентность $\pi$}
 \begin{theorem}[Линдемана-Вейерштрасса] \label{l13_Lin_Vei}
-	Пусть $\alpha_0, \ldots, \alpha_m$ -- различные алгебраические числа.
+	Пусть $\alpha_0, \ldots, \alpha_m$ — различные алгебраические числа.
 	Тогда $e^{\alpha_0}, \ldots, e^{\alpha_m}$ линейно независимы (ЛНЗ) над $\mathbb{A}$.
 \end{theorem}
 
@@ -86,7 +86,7 @@
     \end{array} \right|  = \mathrm{exp}\left(\left(\sum_{k=0}^{m} \alpha_k\right)x\right)  V(\alpha_0, \ldots, \alpha_m) \ne 0,\]
     где $V(x_1, \ldots, x_m)$ является Вандермондом для чисел $x_1, \ldots, x_m$.\\
     Почему $A(x) \in \mathbb{Q}[[x]]$? Рассмотрим нормальное расширение $E$ поле $\mathbb{Q}$, содержащее $a_0, \ldots, a_m, \alpha_0, \ldots, \alpha_m$. (Например, можно взять все сопряженные к ним и добавить к $\mathbb{Q}$, по теореме \ref{l13_th8} будет нормальное расширение).\\
-    Пусть $[E : \mathbb{Q}] = \eta, \sigma_1, \ldots, \sigma_{\eta}$ -- все автоморфизмы $E$ над $\mathbb{Q}$. Тогда $A(x) = E[[x]]$.\\
+    Пусть $[E : \mathbb{Q}] = \eta, \sigma_1, \ldots, \sigma_{\eta}$ — все автоморфизмы $E$ над $\mathbb{Q}$. Тогда $A(x) = E[[x]]$.\\
     Определим $\sigma_1, \ldots, \sigma_{\eta}$ на $E[[x]]$ так:
     $$\sigma_i: \sum_{l = 0}^{\infty} \gamma_l x^l \mapsto \sum_{l = 0}^{\infty} \sigma_i(\gamma_l)x^l$$
 	$$\sigma_i(A(x)) = \sum_{l = 0}^{\infty} \left( \sum_{k = 0}^{\infty} \sigma_i(a_k) \frac{\sigma_i(\alpha_k)^l}{l!} \right) x^l = \sum_{k = 0}^{m} \sigma_i(a_k) e^{\sigma_i(\alpha_k) x} = A_i(x)$$

@@ -1,12 +1,12 @@
 \begin{lemma} \label{l6_lm1}
-	Пусть $\eta_1, \dots, \eta_r$ -- произвольный набор корней из $1$ степеней $d_1, \dots, d_r$ соответственно (т.е. $\eta_i^{d_i} = 1$).
+	Пусть $\eta_1, \dots, \eta_r$ — произвольный набор корней из $1$ степеней $d_1, \dots, d_r$ соответственно (т.е. $\eta_i^{d_i} = 1$).
 	Тогда $\exists! \chi: \ \chi(g_i) = \eta_i$.
 \end{lemma}
 \begin{pf}
 	Для $(a,m)=1$ полагаем $\chi(a) = \eta_1^{\alpha_1} \dots \eta_r^{\alpha_r}$, где $\overline{a} = \overline{g}_1^{\alpha_1} \dots \overline{g}_r^{\alpha_r}$. Для $(a,m) \ne 1$ полагаем $\chi(a) = 0$. Достаточно проверить, что если
 	$(a,m)=1, \, (b,m)=1$, то $\chi(ab) = \chi(a)\chi(b)$.\\
 	Пусть $\overline{a} = \overline{g}_1^{\alpha_1} \dots \overline{g}_r^{\alpha_r}, \, \overline{b} = \overline{g}_1^{\beta_1} \dots \overline{g}_r^{\beta_r}, \, \overline{c} = \overline{g}_1^{\gamma_1} \dots \overline{g}_r^{\gamma_r}$, где $0 \leq \alpha_i, \beta_i, \gamma_i \leq d_1 - 1, \, i=1 \dots r$.
-	Тогда $\gamma_i \equiv \alpha_i + \beta_i \ (\mathrm{mod} \; d_i)$. Следовательно, т.к. $\eta_i$ -- корень из $1$ степени $d_i$, получаем
+	Тогда $\gamma_i \equiv \alpha_i + \beta_i \ (\mathrm{mod} \; d_i)$. Следовательно, т.к. $\eta_i$ — корень из $1$ степени $d_i$, получаем
 	$$\chi(a)\chi(b) = \eta_1^{\alpha_1} \dots \eta_r^{\alpha_r} \cdot \eta_1^{\beta_1} \dots \eta_r^{\beta_r} = \eta_1^{\gamma_1} \dots \eta_r^{\gamma_r} = \chi(ab).$$
 \end{pf}
 
@@ -25,7 +25,7 @@
 	\end{cases}$ называется \textit{главным характером}.
 \end{definition}
 
-Ясно, что $\chi \cdot \chi_0 = \chi$, где операция $\cdot$ -- поточечное перемножение функций. Для любого $\chi$ существует обратное $\chi^{-1}: \ \chi^{-1}(a) = \begin{cases}
+Ясно, что $\chi \cdot \chi_0 = \chi$, где операция $\cdot$ — поточечное перемножение функций. Для любого $\chi$ существует обратное $\chi^{-1}: \ \chi^{-1}(a) = \begin{cases}
 	\chi(a)^{-1}, & \chi(a) \ne 0, \\
 	0, & \chi(a) = 0.
 \end{cases}$ В общем, ясно, что характеры образуют группу.
@@ -68,7 +68,7 @@
 \end{corollary}~\\
 
 \subsection{$L$-функции Дирихле}
-Пусть $m \geq 2, \, \chi$ -- характер по модулю $m$.
+Пусть $m \geq 2, \, \chi$ — характер по модулю $m$.
 \begin{definition}
 	$\displaystyle L(s, \, \chi) = \sum\limits_{n=1}^\infty \frac{\chi(n)}{n^s}$ называется \textit{$L$-функцией Дирихле}.
 \end{definition}
@@ -84,11 +84,11 @@
 \begin{pf}
 	Доказательство этой теоремы очень схоже с доказательством теоремы \ref{l2_th3}. Напомним, что $s = \sigma + it$.
 	\begin{enumerate}[nolistsep]
-		\item[1)] $\displaystyle \left| \frac{\chi(n)}{n^s} \right| \leq \frac{1}{n^\sigma} \ \Rightarrow$ сходится абсолютно при $\sigma > 1$. Но для аналитичности предела нам необходима равномерная сходимость. В области $\displaystyle \Omega_\delta = \{ \Re(s) > 1+\delta \} \ \left| \frac{\chi(n)}{n^s} \right| \leq \frac{1}{n^\sigma} \leq \frac{1}{n^{1+\delta}}$ -- общий член сходящегося ряда. значит, по признаку Вейерштрасса в $\Omega_\delta$ наша последовательность равномерна. Следовательно, по теореме \ref{l2_th_Weierstrass} (Вейерштрасса) ряд сходится к аналитической функции.
+		\item[1)] $\displaystyle \left| \frac{\chi(n)}{n^s} \right| \leq \frac{1}{n^\sigma} \ \Rightarrow$ сходится абсолютно при $\sigma > 1$. Но для аналитичности предела нам необходима равномерная сходимость. В области $\displaystyle \Omega_\delta = \{ \Re(s) > 1+\delta \} \ \left| \frac{\chi(n)}{n^s} \right| \leq \frac{1}{n^\sigma} \leq \frac{1}{n^{1+\delta}}$ — общий член сходящегося ряда. значит, по признаку Вейерштрасса в $\Omega_\delta$ наша последовательность равномерна. Следовательно, по теореме \ref{l2_th_Weierstrass} (Вейерштрасса) ряд сходится к аналитической функции.
 		\item[2)] В первом пункте мы воспользовались теоремой Вейерштрасса, которая, в частности, гласит, что наш ряд можно почленно дифференцировать.
 		\item[3)] $\displaystyle L(s,\,\chi)\cdot\sum\limits_{n=1}^\infty \frac{\chi(n)\Lambda(n)}{n^s} = \sum\limits_{k=1}^\infty \frac{\chi(k)}{k^s} \sum\limits_{n=1}^\infty \frac{\chi(n)\Lambda(n)}{n^s} = \sum\limits_{k,n \in \mathbb{N}} \frac{\chi(k)\chi(n)\Lambda(n)}{(kn)^s} = \sum\limits_{k,n \in \mathbb{N}} \frac{\chi(kn)\Lambda(n)}{(kn)^s} = \sum\limits_{\substack{n \in \mathbb{N} \\ d \vert n}} \frac{\chi(n)\Lambda(d)}{n^s} = \sum\limits_{n \in \mathbb{N}} \frac{\chi(n) \ln(n)}{n^s} = -L'(s,\,\chi)$.\\
 			Итак, получили $\displaystyle L(s,\,\chi) \cdot \sum\limits_{n=1}^\infty \frac{\chi(n)\Lambda(n)}{n^s} = -L'(s,\,\chi)$.\\
-			Если $s_0$ -- ноль порядка $k \in \mathbb{N}$, то порядок нуля левой части будет больше или равен $0$, т.к. мы умножаем на некую аналитическую функцию. Но порядок нуля правой части равен $k-1$. Противоречие.\\
-Осталось показать, почему $L(s, \, \chi) \not\equiv 0$: $\displaystyle \left| \sum\limits_{n=2}^\infty \right| \leq \sum\limits_{n=2}^\infty \frac{1}{n^\sigma} = \frac{1}{\alpha^\sigma}\sum\limits_{n=2}^\infty \frac{1}{\left( \frac{n}{2}\right)^\sigma}$ -- первый множитель стремится к $0$, второй множитель ограничен некой константой $\displaystyle C \ \Rightarrow \ \sum\limits_{n=1}^\infty \frac{\chi(n)}{n^s} = 1+\sum\limits_{n=2}^\infty \frac{\chi(n)}{n^s}$. Второе слагаемое по модулю стремится к $0$ при $\sigma \to \infty$. Следовательно, $L(s, \, \chi) \ne 0$ для некоторого $s$.
+			Если $s_0$ — ноль порядка $k \in \mathbb{N}$, то порядок нуля левой части будет больше или равен $0$, т.к. мы умножаем на некую аналитическую функцию. Но порядок нуля правой части равен $k-1$. Противоречие.\\
+Осталось показать, почему $L(s, \, \chi) \not\equiv 0$: $\displaystyle \left| \sum\limits_{n=2}^\infty \right| \leq \sum\limits_{n=2}^\infty \frac{1}{n^\sigma} = \frac{1}{\alpha^\sigma}\sum\limits_{n=2}^\infty \frac{1}{\left( \frac{n}{2}\right)^\sigma}$ — первый множитель стремится к $0$, второй множитель ограничен некой константой $\displaystyle C \ \Rightarrow \ \sum\limits_{n=1}^\infty \frac{\chi(n)}{n^s} = 1+\sum\limits_{n=2}^\infty \frac{\chi(n)}{n^s}$. Второе слагаемое по модулю стремится к $0$ при $\sigma \to \infty$. Следовательно, $L(s, \, \chi) \ne 0$ для некоторого $s$.
 	\end{enumerate}
 \end{pf}
