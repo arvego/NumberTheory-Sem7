@@ -37,7 +37,7 @@
 \end{proposition}
 \begin{pf}
 	Предположим противное, т.е. пусть $\theta$ алгебраическое. Тогда для него верна теорема Луивилля, а именно
-	$$\exists C > 0:  \forall  \frac{p}{q} \in \mathbb{Q} \setminus \lbrace 0 \rbrace \text{ выполнено }  \left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^d}.$$ 
+	$$\exists C > 0:  \forall  \frac{p}{q} \in \mathbb{Q} \setminus \lbrace 0 \rbrace \text{ выполнено }  \left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^d}.$$
 	Тогда при $n \geq d$ из неравенства $\displaystyle \left|\theta - \frac{p}{q}\right| < \frac{1}{q^{n + 1}}$ следует, что $\displaystyle q \leq \frac{1}{C}$.\\
 	Кроме того, $\displaystyle \left|q \theta - p\right| \leq 1 \Rightarrow |p| \leq 1 + q|\theta| < 1 + \frac{|\theta|}{C}.$\\
 	То есть числа $q$ и $p$ ограничены, значит и количество решений. Противоречие.
@@ -54,7 +54,7 @@
 Кругозора ради добавим, что существует следующая очень сложная
 
 \begin{theorem}[Туэ-Зигеля-Рота]
-	Пусть $\theta$ -- иррациональное алгебраическое число. Тогда $\forall \epsilon > 0$ такое, что $\exists C = C(\theta, \epsilon)$, что для любых $\frac{p}{q} \in \mathbb{Q}$ справедливо 
+	Пусть $\theta$ -- иррациональное алгебраическое число. Тогда $\forall \epsilon > 0$ такое, что $\exists C = C(\theta, \epsilon)$, что для любых $\frac{p}{q} \in \mathbb{Q}$ справедливо
 	$$\left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^{2 + \epsilon}} = \frac{2}{q^{N+1}} \leq \frac{1}{q^N} \leq \frac{1}{q^m}.$$
 	Таким образом, неравенство $\displaystyle \left|\theta - \frac{p}{q}\right| \leq \frac{1}{q^m}$ имеет бесконечное количество решений.
 \end{theorem}~\\
@@ -64,7 +64,7 @@
 	$e \not\in \mathbb{Q}$.
 \end{theorem}
 \begin{pf}
-	Вспомним, что $\displaystyle e = \sum_{n=0}^{\infty} \frac{1}{n!}$. Пусть $e = \frac{p}{q} \in \mathbb{Q}$. Тогда $q! e \in \mathbb{N}$. Несложно видеть, что 
+	Вспомним, что $\displaystyle e = \sum_{n=0}^{\infty} \frac{1}{n!}$. Пусть $e = \frac{p}{q} \in \mathbb{Q}$. Тогда $q! e \in \mathbb{N}$. Несложно видеть, что
 	$$\mathbb{N} \ni \sum_{n = q + 1}^{\infty} \frac{q!}{n!} = \frac{1}{q + 1} + \frac{1}{(q + 1)(q+2)} + \frac{1}{(q+1)(q+2)(q+3)} + \ldots < \sum_{k = 1}^{\infty} \frac{1}{(q+1)^k} \leq 1.$$
 	Получаем противоречие.
 \end{pf}
@@ -73,7 +73,7 @@
 	$\pi \not \in \mathbb{Q}$.
 \end{theorem}
 \begin{pf}
-	Пусть $\pi = \frac{p}{q}, \, p,q \in \mathbb{N}$. 
+	Пусть $\pi = \frac{p}{q}, \, p,q \in \mathbb{N}$.
 	Положим $\displaystyle f_n(x) = q^n \frac{x^n (\pi - x)^n}{n!} = \frac{x^n (q - px)^n}{n!} = \frac{q(x)}{n!}$, где $g(x) \in \mathbb{Z}[x]$.\\
 	Рассмотрим $\displaystyle I_n = \int_{0}^{\pi} f_n(x) \sin(x) dx$, $I_n \geq 0$.\\
 	Положим $\displaystyle F_n(x) = f_n(x) - f_n''(x) + f_n^{(4)}(x) + \ldots = \sum_{k = 0}^{\infty} (-1)^k f_n^{(2k)}(x)$.\\

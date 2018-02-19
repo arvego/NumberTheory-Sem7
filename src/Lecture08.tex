@@ -1,19 +1,19 @@
 \begin{pf} (Теоремы \ref{l6_thm_Dir} Дирихле).
 	При $\displaystyle \Re(s)>1 \ -\frac{L'(s,\,\chi)}{L(s,\,\chi)} = \sum\limits_{n=1}^\infty \frac{\Lambda(n)\chi(n)}{n^s}$.\\
-	Пусть далее $s=\sigma \in \mathbb{R}, \, s>1$. $\Lambda(n) = 
+	Пусть далее $s=\sigma \in \mathbb{R}, \, s>1$. $\Lambda(n) =
 	\begin{cases}
 		\ln p, & n=p^k,\,k\geq1,\\
 		0, & \text{иначе.}
 	\end{cases}$
-	Тогда 
+	Тогда
 	$$-\frac{L'(s,\,\chi)}{L(s,\,\chi)} = \sum\limits_p \frac{\ln p \chi(p)}{p^s} + \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p \cdot \chi\left( p^k \right)}{p^{ks}}$$ (первое слагаемое для $n=p$, второе -- для $n=p^k$). Покажем, что второе слагаемое ограничено константой, не зависящей от $s$ при $s>1$:
 	$$\left| \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p \cdot \chi\left( p^k \right)}{p^{ks}} \right| \leq \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p}{p^{ks}} = \sum\limits_p \ln p \frac{1/p^2}{1-1/p} \leq 2\sum\limits_p \frac{\ln p}{p^2} < 2\sum\limits_n \frac{\ln n}{n^2} < \infty.$$
 	Итак, для любого характера $\chi$ по модулю $m$:
 	$$\sum\limits_p \frac{\chi(p)\ln p}{p^s} = -\frac{L'(s,\,\chi)}{L(s,\,\chi)} + O(1). \qquad \qquad (\ast)$$
-	Поскольку $(l, m) =1$, то $\exists v \in \mathbb{Z}: \ vl \equiv 1 \ (\mathrm{mod} \ m)$ (т.е. обратный). 
+	Поскольку $(l, m) =1$, то $\exists v \in \mathbb{Z}: \ vl \equiv 1 \ (\mathrm{mod} \ m)$ (т.е. обратный).
 	Домножим $(\ast)$ на $\chi(v)$ и просуммируем по всем характерам:
 	$$\sum\limits_p \frac{\ln p}{p^s} \sum\limits_\chi \chi(pv) = -\sum\limits_\chi \chi(v)\frac{L'(s,\,\chi)}{L(s,\,\chi)} + O(1),$$
-	$$\sum\limits_\chi \chi(pv) = 
+	$$\sum\limits_\chi \chi(pv) =
 	\begin{cases}
 		0, & pv \not\equiv 1 \ (\mathrm{mod} \ m),\\
 		\phi(m), & pv \equiv \ (\mathrm{mod} \ m).
@@ -41,7 +41,7 @@
 	А вдруг все числа алгебраические? Нет, алгебраических чисел счётное количество. Это доказал Лиувилль через теорию приближений: он показал, что алгебраические числа не могут приближаться "слишком хорошо". Т.е. для алгебраических чисел не найдётся такой $f$, для которой будет бесконечно много решений.\\
 
 \begin{statement}
-	Если $\displaystyle \theta = \frac{a}{b} \in \mathbb{R}$, то $\displaystyle \forall \frac{p}{q} \in \mathbb{Q} \backslash \{ 0 \}$ такая, что 
+	Если $\displaystyle \theta = \frac{a}{b} \in \mathbb{R}$, то $\displaystyle \forall \frac{p}{q} \in \mathbb{Q} \backslash \{ 0 \}$ такая, что
 	$\displaystyle \left| \theta - \frac{p}{q} \right| > \frac{1/b}{q}$.
 \end{statement}
 \begin{pf}
@@ -49,19 +49,19 @@
 \end{pf}
 
 \begin{theorem}[Дирихле о приближении] \label{l8_thmDir}~\\
-	Пусть $\theta \in \mathbb{R}, \, T \in \mathbb{N}$. Тогда 
+	Пусть $\theta \in \mathbb{R}, \, T \in \mathbb{N}$. Тогда
 	$\displaystyle \exists \frac{p}{q} \in \mathbb{Q}: \ \left| \theta - \frac{p}{q} \right| < \frac{1}{qT}, \ 1 \leq q \leq T$.
 \end{theorem}
 \begin{pf}~\\
 	Хотим: $\displaystyle |q\theta - p| < \frac{1}{T}$. Можно считать, что $\theta \in [0, \, 1)$, потом просто прибавить целую часть.\\
-	Рассмотрим числа $\{ n\theta \}, \ n = 0,1,\dots,T$. Разобьём отрезок $[0, \, 1]$ на полуинтервалы 
-	$\displaystyle \left[ \frac{k}{T}, \, \frac{k+1}{T} \right), \, k=0,1,\dots,T-1$ (т.е на $T$ равных). По принципу Дирихле 
-	$\displaystyle \exists n_1,n_2: \ \left( n_1 - n_2 \right)\theta - \left( \left[n_1\theta\right]-\left[n_2\theta\right] \right) < \frac{1}{T}$. 
+	Рассмотрим числа $\{ n\theta \}, \ n = 0,1,\dots,T$. Разобьём отрезок $[0, \, 1]$ на полуинтервалы
+	$\displaystyle \left[ \frac{k}{T}, \, \frac{k+1}{T} \right), \, k=0,1,\dots,T-1$ (т.е на $T$ равных). По принципу Дирихле
+	$\displaystyle \exists n_1,n_2: \ \left( n_1 - n_2 \right)\theta - \left( \left[n_1\theta\right]-\left[n_2\theta\right] \right) < \frac{1}{T}$.
 	Остаётся положить $q = n_1-n_2, \, p = \left[ n_1\theta \right] - \left[ n_2\theta \right]$; $q \geq 1, \, q \leq T$ (т.е. $n_1,\,n_2 \leq T$).
 \end{pf}
 
 \begin{corollary}
-	Если $\theta \in \mathbb{R} \backslash \mathbb{Q}$, то неравенство 
+	Если $\theta \in \mathbb{R} \backslash \mathbb{Q}$, то неравенство
 	$\displaystyle \lvert \theta - \frac{p}{q} \rvert < \frac{1}{q^2}$ имеет бесконечно много решений в $\frac{p}{q} \in \mathbb{Q}$.
 \end{corollary}
 \begin{pf}
