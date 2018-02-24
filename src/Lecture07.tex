@@ -10,7 +10,7 @@
 	$$L(s, \chi_0) = \zeta(s) \prod_{p | m} \left( 1 - \frac{1}{p^s} \right).$$
 \end{corollary}
 \begin{pf}	
-	Подставим $\chi = \chi_0$. $\chi$ — характер по модулю $m \Rightarrow \chi(p) = 0 \Leftrightarrow p | m$.
+	Подставим $\chi = \chi_0$. $\chi$ — характер по модулю $m \Rightarrow \chi(p) = 0 \Leftrightarrow p | m$.
 	$\displaystyle \zeta(s) = \prod_p  \left( 1 - \frac{1}{p^s} \right)^{-1}$, однако это представление верно только при
 	$\Re(s) > 1$. Равенство везде следует из аналитичности $L$-функции, $\zeta$-функции и $\displaystyle \left(1 - \frac{1}{p^s} \right)$.
 \end{pf}
@@ -34,9 +34,9 @@
 	Применим преобразование Абеля к $\displaystyle a_n = \chi(n), g(x) = \frac{1}{x^s}$. Тогда $\displaystyle A(x) = \sum_{n \leq x} a_n = \sum_{n \leq x} \chi(n)$, и используя следствие \ref{l6_cor} $|A(x)| \leq \phi(m)$.
 	$$\sum_{n = 1}^{N} \frac{\chi(s)}{n^s} = A(N) \frac{1}{N^s} + s \int_{1}^{N} \frac{A(x)}{x^{s + 1}} dx.$$
 	Так как $|A(N)| \leq \phi(m)$, то первое слагаемое стремится к $0$ при $N \rightarrow \infty$ и $\Re(s) > 0$.\\
-	Рассмотрим $\displaystyle \int_1^N \frac{A(x)}{x^{1 + s}} = \sum_{n - 1}^{N - 1} \phi_n(s)$, где $\displaystyle \phi_n(s) = \int_{n}^{n + 1} \frac{A(x)}{x^{1 + s}}$ — аналитическая в $\mathbb{C}$\footnote{Упражнение!}\\
+	Рассмотрим $\displaystyle \int_1^N \frac{A(x)}{x^{1 + s}} = \sum_{n - 1}^{N - 1} \phi_n(s)$, где $\displaystyle \phi_n(s) = \int_{n}^{n + 1} \frac{A(x)}{x^{1 + s}}$ — аналитическая в $\mathbb{C}$\footnote{Упражнение!}\\
 	Покажем, что ряд $\displaystyle \sum_{n = 1}^{\infty} \phi_n(s)$ задает аналитическую функцию в $\Re(s) > 0$. При $\Re(s) > \delta > 0$
-	$$|\phi_n(s)| \leq \int_n^{n + 1} \frac{\phi(m)}{x^{1 + \sigma}} dx \leq  \frac{\phi(m)}{n^{2 + \sigma}} < \frac{\phi(m)}{n^{2 + \delta}} \text{ —  общий член сходящегося ряда} \Rightarrow$$
+	$$|\phi_n(s)| \leq \int_n^{n + 1} \frac{\phi(m)}{x^{1 + \sigma}} dx \leq  \frac{\phi(m)}{n^{2 + \sigma}} < \frac{\phi(m)}{n^{2 + \delta}} \text{ —  общий член сходящегося ряда} \Rightarrow$$
 	$\displaystyle \sum_{n = 1}^{\infty}$ сходится равномерно при $\Re(s) > \delta \Rightarrow$ по теореме Вейерштрасса ряд сходится к аналитической функции.\\
 	Тогда в предыдущем равенстве
 	$$\sum_{n = 1}^{N} \frac{\chi(n)}{n^s} = A(N) \frac{1}{N^s} + s \int_{1}^{N} \frac{A(x)}{x^{1 + s}} dx$$
@@ -55,7 +55,7 @@
 	$$|L^3(\sigma, \chi_0) L^4(\sigma, \chi) L (\sigma, \chi^2)| = \prod_p \left|\left(1 - \frac{\chi_0(p)}{p^{\sigma}}\right)^3\left(1 - \frac{\chi(p)}{p^{\sigma}}\right)^4\left(1 - \frac{\chi^2(p)}{p^{\sigma}}\right) \right|^{-1} \geq 1.$$
 	Поскольку $\chi^2 \ne \chi_0$, то у $L(\sigma, \chi^2)$ в 1 есть значение. Предположим, что $L(1, \chi) = 0$. Тогда\\
 	$L(\sigma, \chi) = O(\sigma - 1)$ при $\sigma \rightarrow 1+0$.\\
-	При этом $\displaystyle L(\sigma, \chi_0) = O(\frac{1}{\sigma - 1})$ при $\sigma \rightarrow 1+0$ — полюс порядка $1$.\\
+	При этом $\displaystyle L(\sigma, \chi_0) = O(\frac{1}{\sigma - 1})$ при $\sigma \rightarrow 1+0$ — полюс порядка $1$.\\
 	$L(\sigma, \chi^2) = O(1)$, т.к. $\chi^2 \ne \chi_0$.
 	Отсюда $\displaystyle |L^3(\sigma, \chi_0) L^4(\sigma, \chi) L(\sigma, \chi^2)| = O(\frac{1}{(\sigma - 1)^3} (\sigma - 1)^4 \cdot 1) = O(\sigma - 1)$ при $\sigma \rightarrow 1+0$, т.е. $\rightarrow 0$, что противоречит неравенству выше.\\
 	\textbf{Случай $2$:} $\chi^2 = \chi_0$.\\
@@ -69,7 +69,7 @@
 		\item[$4)$] $\displaystyle \sum\limits_{n=1}^\infty \frac{a_n}{n^s} $ расходится при $\displaystyle s = \frac{1}{2}$.
 	\end{itemize}
 	\textbf{Пункт $1)$:}\\
-	Надо доказать, что $\displaystyle \sum\limits_{n=1}^\infty \frac{|a_n|}{n^s}$ сходится при $\Re(s) > 1$. При $\Re(s) > 1 + \delta, \delta > 0$ выполнено $\displaystyle \frac{a_n}{n^s} \leq \frac{|a_n|}{n^{\sigma}} < \frac{|a_n|}{n^{1 + \delta}}$ — общий член сходящегося ряда. Следовательно, по признаку Вейерштрасса ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{a_n}{n^s}$ сходится равномерно. Но тогда по Теореме \ref{l2_th_Weierstrass} Вейерштрасса этот ряд задаёт аналитическую функцию, причём его можно почленно дифференцировать.\\
+	Надо доказать, что $\displaystyle \sum\limits_{n=1}^\infty \frac{|a_n|}{n^s}$ сходится при $\Re(s) > 1$. При $\Re(s) > 1 + \delta, \delta > 0$ выполнено $\displaystyle \frac{a_n}{n^s} \leq \frac{|a_n|}{n^{\sigma}} < \frac{|a_n|}{n^{1 + \delta}}$ — общий член сходящегося ряда. Следовательно, по признаку Вейерштрасса ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{a_n}{n^s}$ сходится равномерно. Но тогда по Теореме \ref{l2_th_Weierstrass} Вейерштрасса этот ряд задаёт аналитическую функцию, причём его можно почленно дифференцировать.\\
 	\textbf{Пункт $2)$:}
 	$$a_n = \sum_{d | n} \chi(d) = \prod_{j=1}^r \sum_{\beta_j=0}^{a_j} \chi(p_j)^{\beta_j} = \prod_{j=1}^r a_{n_j},$$
 	$$\text{где } a_{n_j} = 1+\chi(p_j)+\dots+\chi(p_j)^{\alpha_j} = \begin{cases}

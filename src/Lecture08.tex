@@ -6,7 +6,7 @@
 		0, & \text{иначе.}
 	\end{cases}$
 	Тогда
-	$$-\frac{L'(s,\,\chi)}{L(s,\,\chi)} = \sum\limits_p \frac{\ln p \chi(p)}{p^s} + \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p \cdot \chi\left( p^k \right)}{p^{ks}}$$ (первое слагаемое для $n=p$, второе — для $n=p^k$). Покажем, что второе слагаемое ограничено константой, не зависящей от $s$ при $s>1$:
+	$$-\frac{L'(s,\,\chi)}{L(s,\,\chi)} = \sum\limits_p \frac{\ln p \chi(p)}{p^s} + \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p \cdot \chi\left( p^k \right)}{p^{ks}}$$ (первое слагаемое для $n=p$, второе — для $n=p^k$). Покажем, что второе слагаемое ограничено константой, не зависящей от $s$ при $s>1$:
 	$$\left| \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p \cdot \chi\left( p^k \right)}{p^{ks}} \right| \leq \sum\limits_p \sum\limits_{k=2}^\infty \frac{\ln p}{p^{ks}} = \sum\limits_p \ln p \frac{1/p^2}{1-1/p} \leq 2\sum\limits_p \frac{\ln p}{p^2} < 2\sum\limits_n \frac{\ln n}{n^2} < \infty.$$
 	Итак, для любого характера $\chi$ по модулю $m$:
 	$$\sum\limits_p \frac{\chi(p)\ln p}{p^s} = -\frac{L'(s,\,\chi)}{L(s,\,\chi)} + O(1). \qquad \qquad (\ast)$$
@@ -31,13 +31,14 @@
 Из последнего равенства можно, в частности, получить, что $\displaystyle \sum\limits_p \frac{\ln p}{p^s} = \frac{1}{s-1} + O(1)$.\\
 
 \newpage
-
-\section{Диофантовы приближения}
+\begin{center}
+	\section{Диофантовы приближения}
+\end{center}
 \includegraphics[width=\textwidth]{Moschevitin}~\\
 
 \subsection{Основные сведения}
-	Пусть $\theta \in \mathbb{R}$. Насколько маленькой можно сделать разность $\lvert \theta - \frac{p}{q} \rvert$ так, чтобы $\lvert \theta - \frac{p}{q} \rvert < f(a)$ ($p$ и $q$ — не простые).\\
-	Характеристика $\theta$: насколько хорошо она приближается $\frac{p}{q}$. Мы знаем, что существуют нерациональные числа ($\sqrt{2}, \, \sqrt{3},\dots$). Легко доказать, что корни многочленов с целыми коэффициентами (алгебраические числа) не будут рациональными. Например, у многочлена $x^2 - x -1 =0$ корень $\phi = \frac{1+\sqrt{5}}{2}$, а у него корни имею вид $\frac{\text{делитель } -1}{\text{делитель} 1} \in \{ \pm 1 \}$ — $\pm 1$ оба не корни.\\
+	Пусть $\theta \in \mathbb{R}$. Насколько маленькой можно сделать разность $\lvert \theta - \frac{p}{q} \rvert$ так, чтобы $\lvert \theta - \frac{p}{q} \rvert < f(a)$ ($p$ и $q$ — не простые).\\
+	Характеристика $\theta$: насколько хорошо она приближается $\frac{p}{q}$. Мы знаем, что существуют нерациональные числа ($\sqrt{2}, \, \sqrt{3},\dots$). Легко доказать, что корни многочленов с целыми коэффициентами (алгебраические числа) не будут рациональными. Например, у многочлена $x^2 - x -1 =0$ корень $\phi = \frac{1+\sqrt{5}}{2}$, а у него корни имею вид $\frac{\text{делитель } -1}{\text{делитель} 1} \in \{ \pm 1 \}$ — $\pm 1$ оба не корни.\\
 	А вдруг все числа алгебраические? Нет, алгебраических чисел счётное количество. Это доказал Лиувилль через теорию приближений: он показал, что алгебраические числа не могут приближаться "слишком хорошо". Т.е. для алгебраических чисел не найдётся такой $f$, для которой будет бесконечно много решений.\\
 
 \begin{statement}
@@ -65,7 +66,7 @@
 	$\displaystyle \lvert \theta - \frac{p}{q} \rvert < \frac{1}{q^2}$ имеет бесконечно много решений в $\frac{p}{q} \in \mathbb{Q}$.
 \end{corollary}
 \begin{pf}
-	От противного: пусть $\displaystyle \frac{p_1}{q_1},\dots,\frac{p_k}{q_k}$ — все решения $\displaystyle \left| \theta - \frac{p}{q} \right| < \frac{1}{q^2}$. Положим $\displaystyle \delta = \min\limits_i \left| \theta - \frac{p_i}{q_i} \right| > 0, \, T = \lceil \frac{1}{\delta} \rceil$ (любое $\displaystyle T > \frac{1}{\delta}$). По теореме \ref{l8_thmDir} Дирихле $\displaystyle \exists \frac{p}{q}, \ q \leq T: \ \left| \theta - \frac{p}{q} \right| < \frac{1}{qT} \leq \frac{1}{q^2}$. Т.е. $\displaystyle \frac{p}{q}$ должно быть среди $\displaystyle \frac{p_i}{q_i}$. Но $\displaystyle \left| \theta - \frac{p}{q} \right| < \frac{1}{qT} < \frac{\delta}{q} \leq \delta$, т.е. оно ближе, чем наименьшее $\delta$. Противоречие.
+	От противного: пусть $\displaystyle \frac{p_1}{q_1},\dots,\frac{p_k}{q_k}$ — все решения $\displaystyle \left| \theta - \frac{p}{q} \right| < \frac{1}{q^2}$. Положим $\displaystyle \delta = \min\limits_i \left| \theta - \frac{p_i}{q_i} \right| > 0, \, T = \lceil \frac{1}{\delta} \rceil$ (любое $\displaystyle T > \frac{1}{\delta}$). По теореме \ref{l8_thmDir} Дирихле $\displaystyle \exists \frac{p}{q}, \ q \leq T: \ \left| \theta - \frac{p}{q} \right| < \frac{1}{qT} \leq \frac{1}{q^2}$. Т.е. $\displaystyle \frac{p}{q}$ должно быть среди $\displaystyle \frac{p_i}{q_i}$. Но $\displaystyle \left| \theta - \frac{p}{q} \right| < \frac{1}{qT} < \frac{\delta}{q} \leq \delta$, т.е. оно ближе, чем наименьшее $\delta$. Противоречие.
 \end{pf}
 
 Мера иррациональности числа $\displaystyle \theta = \sup\limits_s : \ \{ \left| \theta - \frac{p}{q} \right| < \frac{1}{q^s} \text{ имеет бесконечно много решений } \frac{p}{q} \}$.
