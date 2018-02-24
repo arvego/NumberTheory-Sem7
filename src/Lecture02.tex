@@ -1,24 +1,24 @@
 %\setcounter{section}{2}
 \subsection{Воспоминания из былых времен}
 \begin{theorem}[Вейерштрасса] \label{l2_th_Weierstrass}
-	Пусть в области $\Omega$ функции $f_n(s)$ аналитичны и ряд $\displaystyle \sum\limits_{n=1}^\infty f_n(s)$ сходится равномерно (по $\Omega$). Тогда он сходится к функции $f(x)$, аналитической в $\Omega$, причём $\displaystyle f'(s) = \sum\limits_{n=1}^\infty f_n'(s)$ \text{ -- также сходится равномерно}. 
+	Пусть в области $\Omega$ функции $f_n(s)$ аналитичны и ряд $\displaystyle \sum\limits_{n=1}^\infty f_n(s)$ сходится равномерно (по $\Omega$). Тогда он сходится к функции $f(x)$, аналитической в $\Omega$, причём $\displaystyle f'(s) = \sum\limits_{n=1}^\infty f_n'(s)$ \text{ -- также сходится равномерно}.
 \end{theorem}
 
 \begin{test}[Вейерштрасса]
-	Если в $\Omega$ справедливо $|f_n(s)| < c_n$, и $\displaystyle \sum\limits_{n=1}^\infty c_n$ сходится, то ряд 
+	Если в $\Omega$ справедливо $|f_n(s)| < c_n$, и $\displaystyle \sum\limits_{n=1}^\infty c_n$ сходится, то ряд
 	$\displaystyle \sum\limits_{n=1}^\infty f_n(s)$ равномерно сходится в $\Omega$.
 \end{test}
 \begin{definition}
 	Функция $f: \mathbb{N} \rightarrow \mathbb{C}$ называется \textit{арифметической} функцией.
     Если $f \not\equiv 0$ и $f(ab) = f(a) f(b)$ для любых $a, b$ таких, что $(a, b) = 1$, то функция называется \textit{мультипликативной}.
 	А если равенство $f(ab) = f(a) f(b)$ выполнено для абсолютно всех $a, b \in \mathbb{N}$, то функция называется \textit{вполне мультипликативной}.\\
-    \textit{Сверткой Дирихле} двух арифметических функций $f(n)$ и $g(n)$ является функция 
+    \textit{Сверткой Дирихле} двух арифметических функций $f(n)$ и $g(n)$ является функция
     $$\displaystyle (f \ast g)(n) = (g \ast f)(n) =  \sum_{k | n} f(k) g\left(\frac{n}{k}\right)$$
-    \textit{Формула обращения Мебиуса} гласит, что если $F = f \ast \textbf{1}$, то $f = F \ast \mu$, где $\mu(n)$ -- функция Мебиуса\footnote{$\mu(n) = 
+    \textit{Формула обращения Мебиуса} гласит, что если $F = f \ast \textbf{1}$, то $f = F \ast \mu$, где $\mu(n)$ -- функция Мебиуса\footnote{$\mu(n) =
     \begin{cases}
 	     1, n = 1, \\
-    	 0, \exists p^2 | n, \\
-     	(-1)^r, n = p_1 \ldots, p_r.
+	 0, \exists p^2 | n, \\
+	(-1)^r, n = p_1 \ldots, p_r.
 	\end{cases}$}
 \end{definition}
 
@@ -37,8 +37,8 @@
 	\begin{enumerate}[nolistsep]
 		\item[1)] ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{1}{n^s}$ сходится абсолютно и задаёт аналитическую функцию $\zeta(s)$;
 		\item[2)] $\displaystyle \zeta'(s) = -\sum\limits_{n=1}^\infty \frac{\ln(n)}{n^s}$;
-		\item[3)] $\displaystyle \zeta(s) \ne 0$ и $\displaystyle \frac{\zeta'(s)}{\zeta(s)} = -\sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}$, где $\Lambda(n) = 
-		\begin{cases} 
+		\item[3)] $\displaystyle \zeta(s) \ne 0$ и $\displaystyle \frac{\zeta'(s)}{\zeta(s)} = -\sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}$, где $\Lambda(n) =
+		\begin{cases}
 			\ln(p), & n=p^k,\,k\geq 1,\\
 			0, & \text{иначе}
 		\end{cases}$ -- функция Мангольдта.
@@ -47,11 +47,11 @@
 \begin{pf}~\\
 	\textbf{Пункт 1):} Обозначим $s=\sigma+it.$ Тогда $\displaystyle \left| \frac{1}{n^s} \right| = \frac{1}{n^\sigma},\,\sigma > 1$ -- таким образом, абсолютная сходимость есть. При этом в области $\Omega_\delta = \{ s \in \mathbb{C} \ | \ \Re(s) > 1+\delta \},\, \delta>0,$ сходимость будет равномерной, ибо $\displaystyle \left| \frac{1}{n^s} \right| = \frac{1}{n^\sigma} < \frac{1}{n^{1+\delta}}$, а ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{1}{n^{1+\delta}}$ сходится. Но тогда по признаку Вейерштрасса $\displaystyle \sum\limits_{n=1}^\infty \frac{1}{n^s}$ равномерно сходится в $\Omega_\delta.$ По теореме \ref{l2_th_Weierstrass} сумма ряда является аналитичной в $\Omega_\delta$ (каждая $\displaystyle \frac{1}{n^s}$ является целой функцией $s$). И это справедливо для всех $\delta$.\\
 	\textbf{Пункт 2):} По теореме \ref{l2_th_Weierstrass} в каждой $\displaystyle \Omega_\delta: \ \left(\frac{1}{n^s}\right)' = \left(e^{-s \ln n}\right)'.$ Далее очевидно.\\
-	\textbf{Пункт 3):} Заметим, что в области $\displaystyle \Omega_\delta:$ $$\left| \frac{\Lambda(n)}{n^s} \right| = \frac{\Lambda(n)}{n^\sigma} \leq \frac{\ln n}{n^\sigma} < \frac{\ln(n)}{n^{1+\delta}},$$ а мы знаем, что ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{\ln(n)}{n^{1+\delta}}$ сходится. Тогда по признаку Вейерштрасса $\displaystyle \sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}$ сходится в $\Omega_\delta$ равномерно. По теореме \ref{l2_th_Weierstrass} сходится к аналитической функции, причём абсолютно. Перемножим два абсолютно сходящихся ряда: 
+	\textbf{Пункт 3):} Заметим, что в области $\displaystyle \Omega_\delta:$ $$\left| \frac{\Lambda(n)}{n^s} \right| = \frac{\Lambda(n)}{n^\sigma} \leq \frac{\ln n}{n^\sigma} < \frac{\ln(n)}{n^{1+\delta}},$$ а мы знаем, что ряд $\displaystyle \sum\limits_{n=1}^\infty \frac{\ln(n)}{n^{1+\delta}}$ сходится. Тогда по признаку Вейерштрасса $\displaystyle \sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}$ сходится в $\Omega_\delta$ равномерно. По теореме \ref{l2_th_Weierstrass} сходится к аналитической функции, причём абсолютно. Перемножим два абсолютно сходящихся ряда:
 		$$\left( \sum\limits_{k=1}^\infty \frac{1}{k^s} \right)\left( \sum\limits_{l=1}^\infty \frac{\Lambda(l)}{l^s} \right) = \sum\limits_{k,l=1}^\infty \frac{\Lambda(l)}{(kl)^s} = \sum\limits_{n=1}^\infty \frac{\sum_{l | n}\Lambda(l) \ (\ast)}{n^s} = \sum\limits_{n=1}^\infty \frac{\ln(n)}{n^s} = -\zeta'(s).$$
 		($(\ast)$ пусть $n = p_1^{\alpha_1}\dots p_r^{\alpha_r}$, тогда $\displaystyle \sum\limits_{l | n}\Lambda(l) = \sum\limits_{j=1}^r \left( \sum\limits_{\beta_j=1}^{\alpha_j} \Lambda\left(p_j^{\beta_j} \right) \right) = \sum\limits_{j=1}^r \ln\left( p_j^{\alpha_j} \right) = \ln(n)$).\\
-	Итак, при $\Re(s)>1$ имеем 
-		$$-\zeta'(s) = \zeta(s) \cdot \sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}.$$ 
+	Итак, при $\Re(s)>1$ имеем
+		$$-\zeta'(s) = \zeta(s) \cdot \sum\limits_{n=1}^\infty \frac{\Lambda(n)}{n^s}.$$
 	Из аналитичности всех функций: пусть $s_0$ -- ноль $\zeta(s)$ кратности $k>0$, тогда $s_0$ -- ноль $\zeta'(s)$ кратности $k-1$. Так как мы перемножаем две функции, то их кратности должны складываться. Значит, $k-1=k+$нечто неотрицательное.  Получаем противоречие. Почему кратность обязательно конечна? Предположим противное, пусть она бесконечна и тогда $\zeta(s)|_{\Re(s)>1} \equiv 0$ -- противоречие.
 \end{pf}
 
@@ -61,7 +61,7 @@
 %\end{definition}
 
 \begin{lemma} \label{l2_lm4}
-	Пусть $f$ -- вполне мультипликативная функция, ряд $\displaystyle \sum\limits_{n=1}^\infty f(n)$ абсолютно сходится и $\displaystyle S = \sum\limits_{n=1}^\infty f(n)$. Тогда 
+	Пусть $f$ -- вполне мультипликативная функция, ряд $\displaystyle \sum\limits_{n=1}^\infty f(n)$ абсолютно сходится и $\displaystyle S = \sum\limits_{n=1}^\infty f(n)$. Тогда
 	$$S = \prod\limits_p(1-f(p))^{-1}.$$
 \end{lemma}
 \begin{pf}
@@ -71,9 +71,9 @@
 \begin{theorem}[формула Эйлера] \label{l2_Euler_formula}
 	Пусть $\Re(s)>1$. Тогда $$\zeta(s) = \prod\limits_p\left( 1-\frac{1}{p^s}\right)^{-1}.$$
 \end{theorem}
-\begin{pf} 
+\begin{pf}
 %\textit{(Теоремы \ref{l2_Euler_formula}).}\\
-	Возьмём (и положим) $\displaystyle f(n) = \frac{1}{n^s}$ и применим лемму \ref{l2_lm4}. Тогда 
+	Возьмём (и положим) $\displaystyle f(n) = \frac{1}{n^s}$ и применим лемму \ref{l2_lm4}. Тогда
 		$$\zeta(s) = \sum\limits_{n=1}^\infty \frac{1}{n^s} = \prod\limits_p\left( 1-\frac{1}{p^s} \right)^{-1}.$$
 \end{pf}
 
