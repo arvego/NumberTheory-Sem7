@@ -20,7 +20,7 @@
 	 $\displaystyle \mathcal{B}_k^{(n)} = \int_0^{+\infty}f_n(x+k)e^{-x}dx = \sum\limits_j \left[ \text{коэффициент в } \frac{(x+k)^{n-1}(x+k-1)^n\dots x^n \dots}{(n-1)!} \text{ при } x^j \right] \cdot j! = \frac{1}{(n-1)!}\left( C_nn! + C_{n+1}(n+1)! + \dots + C_NN! \right) \equiv 0 \mod n$.\\
 	Покажем, наконец, что для бесконечно многих $\displaystyle n \ \sum\limits_{k=0}^m a_k \mathcal{B}_k^{(n)} \ne 0$ (то есть, что $\mathcal{B}^{(n)} \not\in \Pi$):
 	$$\sum\limits_{k=0}^m a_k \mathcal{B}_k^{(n)} \equiv a_0(-1)^{mn}m!^n \ (\mathrm{mod} \ n).$$
-	Тогда при $\left(n, \ a_0m! \right) = 1$, где $a_0m!$ -- некоторое фиксированное число, ряд будет не равен нулю.
+	Тогда при $\left(n, \ a_0m! \right) = 1$, где $a_0m!$ — некоторое фиксированное число, ряд будет не равен нулю.
 \end{pf}
 
 \newpage
@@ -38,13 +38,13 @@
 	$p_\alpha(\alpha) = 0$ и $\deg p_\alpha = \deg \alpha$.
 \end{definition}
 
-Оказывается, что $\mathbb{A}$ -- алгебраически замкнутое поле, т.е. корень многочлена с алгебраическими коэффициентами тоже будет алгебраическим числом.\\
+Оказывается, что $\mathbb{A}$ — алгебраически замкнутое поле, т.е. корень многочлена с алгебраическими коэффициентами тоже будет алгебраическим числом.\\
 Для доказательства нам сначала понадобятся несколько лемм.
 
 \begin{theorem}[О симметрических многочленах] \label{l10_thSymm}~\\
-	Пусть $R$ -- ассоциативное коммутативное кольцо с единицей и без делителей нуля.\\
-	Пусть $f \left( x_1, \dots, x_m \right) \in R \left[ x_1, \dots, x_m \right]$ -- симметрический многочлен.\\
-	Тогда $\exists g\left( x_1, \dots x_m \right) \in R \left[ x_1, \dots, x_m \right]: \ f\left( x_1, \dots, x_m \right) = g\left( s_1\left( x_1, \dots, x_m \right), \dots, s_m\left( x_1, \dots, x_m \right) \right)$, где $s_k\left( x_1, \dots, x_m \right)$ -- $k$-ый симметрический многочлен.
+	Пусть $R$ — ассоциативное коммутативное кольцо с единицей и без делителей нуля.\\
+	Пусть $f \left( x_1, \dots, x_m \right) \in R \left[ x_1, \dots, x_m \right]$ — симметрический многочлен.\\
+	Тогда $\exists g\left( x_1, \dots x_m \right) \in R \left[ x_1, \dots, x_m \right]: \ f\left( x_1, \dots, x_m \right) = g\left( s_1\left( x_1, \dots, x_m \right), \dots, s_m\left( x_1, \dots, x_m \right) \right)$, где $s_k\left( x_1, \dots, x_m \right)$ — $k$-ый симметрический многочлен.
 \end{theorem}
 
 \begin{lemma} \label{l10_lm1}
@@ -52,12 +52,12 @@
 	$\displaystyle \exists g(x, y_1, \dots, y_m) \in R[x, y_1, \dots, y_m]: \ f(x,y_1)\cdot...\cdot f(x,y_m) = g(x,s_1(y_1,\dots,y_m),\dots,s_m(y_1,\dots,y_m))$.
 \end{lemma}
 \begin{pf}
-	$f(x,y_1) \cdot ... \cdot f(x, y_m) \in R[x][y_1,\dots,y_m]$, т.е. он симметричный по $y_1,\dots,y_m$ над $R[x]$. По Теореме \ref{l10_thSymm} существует искомый многочлен $g$, причём $g$ -- многочлен от $(x,y_1,\dots,y_m$ над $R$.
+	$f(x,y_1) \cdot ... \cdot f(x, y_m) \in R[x][y_1,\dots,y_m]$, т.е. он симметричный по $y_1,\dots,y_m$ над $R[x]$. По Теореме \ref{l10_thSymm} существует искомый многочлен $g$, причём $g$ — многочлен от $(x,y_1,\dots,y_m$ над $R$.
 	%$\exists g \in R[x][yy_1,\dots,y_m]: \  g\left( s_1\left( y_1, \dots, y_m \right), \dots, s_m\left( y_1, \dots, y_m \right) \right) = 0$.
 \end{pf}
 
 \begin{lemma} \label{l10_lm2}
-	Пусть $f(x,y) \in \mathbb{Q}[x,y], \, \alpha \in \mathbb{A}, \, \deg\alpha = n, \, \alpha_1 = \alpha, \, \alpha_2,\dots,\alpha_n$ -- корни $p_\alpha(x)$\footnote{Они попарно различны как корни любого неприводимого многочлена $f(x)$. Иначе бы у $f'(x)$ и $f(x)$ был этот корень общим, но $\deg(f') < \deg(f)$ -- противоречие с неприводимостью.}. Тогда $F(x) = \prod\limits_{k=1}^n f(x,\alpha_k) \in \mathbb{Q}[x]$.
+	Пусть $f(x,y) \in \mathbb{Q}[x,y], \, \alpha \in \mathbb{A}, \, \deg\alpha = n, \, \alpha_1 = \alpha, \, \alpha_2,\dots,\alpha_n$ — корни $p_\alpha(x)$\footnote{Они попарно различны как корни любого неприводимого многочлена $f(x)$. Иначе бы у $f'(x)$ и $f(x)$ был этот корень общим, но $\deg(f') < \deg(f)$ — противоречие с неприводимостью.}. Тогда $F(x) = \prod\limits_{k=1}^n f(x,\alpha_k) \in \mathbb{Q}[x]$.
 \end{lemma}
 \begin{pf}
 	Применим Лемму \ref{l10_lm1}:
@@ -66,14 +66,14 @@
 \end{pf}
 
 \begin{theorem} \label{l10_th1}
-	$\mathbb{A}$ -- поле.
+	$\mathbb{A}$ — поле.
 \end{theorem}
 \begin{pf}
 	Пусть $\alpha, \beta \in \mathbb{A}$. Хотим проверить что $\{ \alpha @ \beta \vert @ \in \{+, -, /, \cdot \} \}$.\\
 	\textit{Сложение:}\\
-	Рассмотрим $\displaystyle F_1(x) = \prod\limits_{k=1}^m p_\alpha\left( x-\beta_k \right)$, где $\beta_1 = \beta, \, \beta_2,\dots,\beta_m$ -- корни $p_\beta(x)$. Тогда по Лемме \ref{l10_lm2}: $F_1(x) \in \mathbb{Q}[x]$. При этом $\displaystyle F_1(\alpha + \beta) = \dots \cdot p_\alpha(\alpha) \cdot \dots = 0$.\\
+	Рассмотрим $\displaystyle F_1(x) = \prod\limits_{k=1}^m p_\alpha\left( x-\beta_k \right)$, где $\beta_1 = \beta, \, \beta_2,\dots,\beta_m$ — корни $p_\beta(x)$. Тогда по Лемме \ref{l10_lm2}: $F_1(x) \in \mathbb{Q}[x]$. При этом $\displaystyle F_1(\alpha + \beta) = \dots \cdot p_\alpha(\alpha) \cdot \dots = 0$.\\
 	\textit{Вычитание:}\\
-Если $\beta$ -- алгебраическое, то алгебраическим будет и $-\beta$. Тогда $\alpha-\beta$ -- тоже алгебраическое. Ну или так: $\displaystyle F_2(x) = \prod\limits_{k=1}^m p_\alpha \left( x+\beta \right) \in \mathbb{Q}[x], \, F_2(\alpha-\beta)=0$.\\
+Если $\beta$ — алгебраическое, то алгебраическим будет и $-\beta$. Тогда $\alpha-\beta$ — тоже алгебраическое. Ну или так: $\displaystyle F_2(x) = \prod\limits_{k=1}^m p_\alpha \left( x+\beta \right) \in \mathbb{Q}[x], \, F_2(\alpha-\beta)=0$.\\
 	\textit{Деление:}\\
 	$\displaystyle F_3(x) = \prod\limits_{k=1}^m p_\alpha\left( x\beta_k \right) \in \mathbb{Q}[x], \, F_3\left( \frac{\alpha}{\beta} \right) = 0$.\\
 	\textit{Умножение:}\\

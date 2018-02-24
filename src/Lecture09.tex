@@ -4,7 +4,7 @@
 
 Известно (существует такая теорема), что число плохо приближаемо тогда и только тогда, когда неполные частные при разложении в цепную дробь ограничены.
 Например, для квадратичной иррациональности неполные частные периодичны \footnote{Теорема Лагранжа с $1$-го курса}, а значит и ограничены, т.е. квадратичные иррациональности плохо приближаемы.\\
-Отныне и далее мы будем подразумевать, что $\theta$ -- вещественное число, а $\alpha$ -- комплексное.
+Отныне и далее мы будем подразумевать, что $\theta$ — вещественное число, а $\alpha$ — комплексное.
 
 \begin{definition}
 	Число $\alpha \in \mathbb{C}$ называется \it{алгебраическим}, если существует ненулевой многочлен $f(x)$ c рациональными (или целыми) коэффициентами такой, что $f(\alpha) = 0$. Такой многочлен $f(x)$ называется аннулирующим многочленом для числа $\alpha$.
@@ -15,7 +15,7 @@
 \end{definition}
 
 \begin{theorem}[Лиувилля]  \label{l9_Liouv}
-	Пусть $\theta$ -- вещественное алгебраическое число степени $d$. Тогда $\exists C = C(\theta) > 0$ такое, что для любого $\displaystyle \frac{p}{q} \in \mathbb{Q} \setminus \lbrace 0 \rbrace$ справедливо $\displaystyle \left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^d}$, или, другими словами, $\mu(\theta) \leq d$.
+	Пусть $\theta$ — вещественное алгебраическое число степени $d$. Тогда $\exists C = C(\theta) > 0$ такое, что для любого $\displaystyle \frac{p}{q} \in \mathbb{Q} \setminus \lbrace 0 \rbrace$ справедливо $\displaystyle \left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^d}$, или, другими словами, $\mu(\theta) \leq d$.
 \end{theorem}
 \begin{pf}
 	Случай $d = 1$ уже доказан в первом утверждении в разделе.\\
@@ -44,7 +44,7 @@
 \end{pf}
 
 \begin{example}
-	Число $\displaystyle \theta = \sum_{n = 0}^{\infty} \frac{1}{2^{n!}}$ -- луивиллево.
+	Число $\displaystyle \theta = \sum_{n = 0}^{\infty} \frac{1}{2^{n!}}$ — луивиллево.
 \end{example}
 \begin{pf}
 	Пусть $m \in \mathbb{N}$. Рассмотрим $N \geq m$. Обозначим через $\displaystyle \frac{p}{q} = \sum_{n = 1}^{N} \frac{1}{2^{n!}}$. Тогда $\displaystyle \left| \theta - \frac{p}{q} \right| = \sum_{n = N + 1}^{\infty} \frac{1}{2^{n!}} \leq 2 \cdot \frac{1}{2^{(N+1)!}} = \frac{2}{q^{N + 1}} \leq \frac{1}{q^N} \leq \frac{1}{q^m}$.\\
@@ -54,7 +54,7 @@
 Кругозора ради добавим, что существует следующая очень сложная
 
 \begin{theorem}[Туэ-Зигеля-Рота]
-	Пусть $\theta$ -- иррациональное алгебраическое число. Тогда $\forall \epsilon > 0$ такое, что $\exists C = C(\theta, \epsilon)$, что для любых $\frac{p}{q} \in \mathbb{Q}$ справедливо
+	Пусть $\theta$ — иррациональное алгебраическое число. Тогда $\forall \epsilon > 0$ такое, что $\exists C = C(\theta, \epsilon)$, что для любых $\frac{p}{q} \in \mathbb{Q}$ справедливо
 	$$\left|\theta - \frac{p}{q}\right| \geq \frac{C}{q^{2 + \epsilon}} = \frac{2}{q^{N+1}} \leq \frac{1}{q^N} \leq \frac{1}{q^m}.$$
 	Таким образом, неравенство $\displaystyle \left|\theta - \frac{p}{q}\right| \leq \frac{1}{q^m}$ имеет бесконечное количество решений.
 \end{theorem}~\\

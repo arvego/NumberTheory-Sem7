@@ -1,15 +1,15 @@
 \section{Асимптотический закон распределения простых чисел}
 \begin{note}
-	Впредь, если мы будем писать сумму вида $\displaystyle \sum_{ \ldots p \ldots} \ldots$, то мы будем иметь в виду, что $p$ -- простое число.
+	Впредь, если мы будем писать сумму вида $\displaystyle \sum_{ \ldots p \ldots} \ldots$, то мы будем иметь в виду, что $p$ — простое число.
 \end{note}
 
 \subsection{Игры c $\pi(x), \theta(x), \psi(x)$}
 Изучение распределения простых чисел непосредственно связано с изучением следующих функций:
 \begin{itemize}[nolistsep]
-   \item $\displaystyle \pi(x) = \sum_{p \leq x} 1$ -- количество простых чисел, не превосходящих $x$;
-   \item $\displaystyle \theta(x) = \sum_{p \leq x} \ln p = \ln \left(\prod_{p \leq x} p\right)$ -- $\theta$-функция Чебышева;
+   \item $\displaystyle \pi(x) = \sum_{p \leq x} 1$ — количество простых чисел, не превосходящих $x$;
+   \item $\displaystyle \theta(x) = \sum_{p \leq x} \ln p = \ln \left(\prod_{p \leq x} p\right)$ — $\theta$-функция Чебышева;
    %$ = \ln \left( \text{НОД}(1, 2, \ldots, [x]) \right)$;
-   \item $\displaystyle \psi(x) = \sum_{p^{\alpha} \leq x} \ln(p) = \sum_{p \leq x} \left[\frac{\ln(x)}{\ln(p)}\right] \ln(p) = \ln \left( \text{НОК}(1, 2, \ldots, [x]) \right)$ -- $\psi$-функция Чебышева.
+   \item $\displaystyle \psi(x) = \sum_{p^{\alpha} \leq x} \ln(p) = \sum_{p \leq x} \left[\frac{\ln(x)}{\ln(p)}\right] \ln(p) = \ln \left( \text{НОК}(1, 2, \ldots, [x]) \right)$ — $\psi$-функция Чебышева.
 \end{itemize}
 Как эти функции связаны? Оказывается, следующим соотношением:
 \begin{lemma} \label{l1_lm1}
@@ -39,9 +39,9 @@
 \begin{pf}
 	Будем доказывать методом математической индукции по $n$.\\
     \textbf{База.} При $n = 2, 3$ утверждение верно.\\
-    \textbf{Переход.} Если $n = 2k$ -- чётно, то видно, что
+    \textbf{Переход.} Если $n = 2k$ — чётно, то видно, что
     $\displaystyle \prod_{p \leq 2k} p = \prod_{p \leq 2k - 1} p \leq 4^{2k - 1} \leq 4^{2k}$.\\
-    Если $n = 2k - 1 $ -- нечётное, то по предложению индукции
+    Если $n = 2k - 1 $ — нечётное, то по предложению индукции
     $\displaystyle \prod_{p \leq n} p = \left( \prod_{p \leq k} p \right)\left( \prod_{k < p \leq 2k-1} p \right) \leq 4^k4^{k-1}=4^n$.
     Заметим, что $\displaystyle  \prod_{k < p \leq 2k - 1} p  < C_{2k - 1}^k = \frac{(2k-1)!}{k! (k - 1)!}$, т.к. каждое такое простое число входит в числитель, но не входит в знаменатель. Поэтому
 	$\displaystyle \prod_{k < p \leq 2k-1} p \leq C_{2k - 1}^{k} \leq \frac{1}{2} \cdot 2^{2m - 1} = 4^{m - 1}$.
@@ -64,7 +64,7 @@
 \end{lemma}
 \begin{pf}
     Рассмотрим $\displaystyle I = \int_{0}^{1} x^n (1 - x)^n dx$. Поскольку на отрезке $[0, 1]$ величина $x(1 - x)$ не превосходит $\displaystyle \frac{1}{4}$, то $\displaystyle I < \frac{1}{4^n}$.\\
-    Заметим, что $x^n(1 - x)^n = a_n  x^n + \ldots + a_{2n} x^{2n}$ -- многочлен с целыми коэффициентами. Тогда $\displaystyle I = \frac{a_n}{n + 1} + \ldots + \frac{a_{2n}}{2n + 1}$, и $K \cdot I \in \mathbb{Z}$. Причём $K$ и $I$ оба больше нуля, т.е. $K \cdot I \geq 1$. Откуда следует, что $\displaystyle K \geq \frac{1}{I} > 4^n$.
+    Заметим, что $x^n(1 - x)^n = a_n  x^n + \ldots + a_{2n} x^{2n}$ — многочлен с целыми коэффициентами. Тогда $\displaystyle I = \frac{a_n}{n + 1} + \ldots + \frac{a_{2n}}{2n + 1}$, и $K \cdot I \in \mathbb{Z}$. Причём $K$ и $I$ оба больше нуля, т.е. $K \cdot I \geq 1$. Откуда следует, что $\displaystyle K \geq \frac{1}{I} > 4^n$.
 \end{pf}
 
 \begin{corollary} \label{l1_cor3}
@@ -93,14 +93,14 @@
 \subsection{Дзета-функция Римана}
 Положим при $\Re(s) > 1$
 $$\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}.$$
-Будем писать $s = \sigma + it$. Мы докажем, что $\zeta(s)$ -- аналитическая функция на $\Re(s) > 1$, и аналитически продолжим её на $\Re(s) > 0$ (можно и на всю $\mathbb{C}$, будет единственный полюс в точке $1$).
+Будем писать $s = \sigma + it$. Мы докажем, что $\zeta(s)$ — аналитическая функция на $\Re(s) > 1$, и аналитически продолжим её на $\Re(s) > 0$ (можно и на всю $\mathbb{C}$, будет единственный полюс в точке $1$).
 
 \begin{theorem}[Гипотеза Римана] \label{l1_RiemannHypothesis}
 	Нетривиальные нули $\zeta$-функции лежат на прямой $\Re(s) = \frac{1}{2}$.
 \end{theorem}
 
 \textit{Отступление:}\\
-	Предположим, что $p_1,\,p_2,\dots,p_r$ -- все простые. Тогда
+	Предположим, что $p_1,\,p_2,\dots,p_r$ — все простые. Тогда
 	$\displaystyle \sum\limits_{k=0}^\infty \frac{1}{p_j^k} = \frac{1}{1-\frac{1}{p_j}}$. Следовательно,
-	$$\sum_{(k_1,\dots,k_r)} \frac{1}{p_1^{k_1} \dots p_r^{k_r}} = \prod_{j=1}^r \frac{1}{1-\frac{1}{p_j}} \text{ -- сходится}.$$
-	Но слева -- сумма гармонического ряда. Противоречие.
+	$$\sum_{(k_1,\dots,k_r)} \frac{1}{p_1^{k_1} \dots p_r^{k_r}} = \prod_{j=1}^r \frac{1}{1-\frac{1}{p_j}} \text{ — сходится}.$$
+	Но слева — сумма гармонического ряда. Противоречие.

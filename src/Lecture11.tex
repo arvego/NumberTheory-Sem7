@@ -34,12 +34,12 @@
 \begin{pf}
 	$p_{\alpha}(x) | f(x)$ в $\mathbb{Q}[x]$, т.е. $\exists g(x) \in \mathbb{Q}[x]: f(x) = g(x) p_{\alpha}(x)$.\\
 	Покажем, что  $g(x), p_{\alpha}(x) \in \mathbb{Z}[x]$.\\
-	Пусть $A, B$ -- НОК знаменателей коэффициентов $g(x)$ и $p_{\alpha}(x)$ соответственно. Тогда $Ag(x)$ и $Bp_{\alpha}(x)$ -- примитивные многочлены.\\
-	$ABf(x) = Ag(x) Bp_{\alpha}(x)$ -- примитивный многочлен по лемме \ref{l11_Gauss_lemma} Гаусса. Тогда $AB = 1 \Rightarrow A = B = 1$.
+	Пусть $A, B$ — НОК знаменателей коэффициентов $g(x)$ и $p_{\alpha}(x)$ соответственно. Тогда $Ag(x)$ и $Bp_{\alpha}(x)$ — примитивные многочлены.\\
+	$ABf(x) = Ag(x) Bp_{\alpha}(x)$ — примитивный многочлен по лемме \ref{l11_Gauss_lemma} Гаусса. Тогда $AB = 1 \Rightarrow A = B = 1$.
 \end{pf}
 
 \begin{lemma} \label{l11_lm4}
-	Пусть $f(x, y) \in \mathbb{Z}[x, y]$. Пусть $\alpha = \alpha_1, \ldots, \alpha_n$ -- сопряженные к $\alpha \in \mathbb{Z_{\mathbb{A}}}$.
+	Пусть $f(x, y) \in \mathbb{Z}[x, y]$. Пусть $\alpha = \alpha_1, \ldots, \alpha_n$ — сопряженные к $\alpha \in \mathbb{Z_{\mathbb{A}}}$.
 	Тогда $\displaystyle F(x) = \prod_{i = 1}^{n} f(x, \alpha_i) \in \mathbb{Z}[x]$.
 \end{lemma}
 \begin{pf}
@@ -47,10 +47,10 @@
 \end{pf}
 
 \begin{theorem} \label{l11_th3}
-	$\mathbb{Z_{\mathbb{A}}}$ -- кольцо.
+	$\mathbb{Z_{\mathbb{A}}}$ — кольцо.
 \end{theorem}
 \begin{pf}
-	Пусть $\alpha, \beta \in \mathbb{Z_{\mathbb{A}}}$. Пусть $\alpha = \alpha_1, \ldots, \alpha_n$  -- сопряженные к $\alpha$, $\beta = \beta_1, \ldots, \beta_m$ -- сопряженные к $\beta$.
+	Пусть $\alpha, \beta \in \mathbb{Z_{\mathbb{A}}}$. Пусть $\alpha = \alpha_1, \ldots, \alpha_n$  — сопряженные к $\alpha$, $\beta = \beta_1, \ldots, \beta_m$ — сопряженные к $\beta$.
 	Тогда, по Лемме \ref{l11_lm4}:
 	$$F_1(x) = \prod_{i = 1}^{m} p_{\alpha}(x - \beta_i) \in \mathbb{Z}[x],$$
 	$$F_2(x) = \prod_{i = 1}^{m} p_{\alpha}(x + \beta_i) \in \mathbb{Z}[x],$$
@@ -63,13 +63,13 @@
 \end{problem}~\\
 
 \subsection{Конечные расширения $\mathbb{Q}$}
-Пусть $\alpha_1, \ldots, \alpha_n$ -- произвольные алгебраические числа.
+Пусть $\alpha_1, \ldots, \alpha_n$ — произвольные алгебраические числа.
 \begin{definition}
-	$\displaystyle \mathbb{Q}(\alpha_1, \ldots, \alpha_n) = \lbrace \frac{f(\alpha_1, \ldots, \alpha_n)}{g(\alpha_1, \ldots, \alpha_n)} \mid| f, g \in \mathbb{Q}[x_1, \ldots, x_n], g(\alpha_1, \ldots, \alpha_n) \ne 0\rbrace$ -- \textit{расширение} $\mathbb{Q}$, порожденное $\alpha_1, \ldots, \alpha_n$.
+	$\displaystyle \mathbb{Q}(\alpha_1, \ldots, \alpha_n) = \lbrace \frac{f(\alpha_1, \ldots, \alpha_n)}{g(\alpha_1, \ldots, \alpha_n)} \mid| f, g \in \mathbb{Q}[x_1, \ldots, x_n], g(\alpha_1, \ldots, \alpha_n) \ne 0\rbrace$ — \textit{расширение} $\mathbb{Q}$, порожденное $\alpha_1, \ldots, \alpha_n$.
 \end{definition}
 
 \begin{problem}
-	Доказать, что $\mathbb{Q}(\alpha_1, \ldots, \alpha_n)$ -- минимальное по включению поле, содержащее и $\mathbb{Q}$, и $\alpha_1, \ldots, \alpha_n$.
+	Доказать, что $\mathbb{Q}(\alpha_1, \ldots, \alpha_n)$ — минимальное по включению поле, содержащее и $\mathbb{Q}$, и $\alpha_1, \ldots, \alpha_n$.
 \end{problem}
 
 \begin{lemma} \label{l11_lm5}
@@ -82,11 +82,11 @@
 	Положим $h(x) = f(x) v(x)$. Поделим $h(x)$ с остатков на $p_{\theta}(x): h(x) = q(x) p_{\theta}(x) + r(x), \deg r(x) < \deg \theta$.\\
 	Тогда $\alpha = h(\theta) = r(\theta), \, \deg r(x) < n, \, r(x) \in \mathbb{Q}[x]$.\\
 	Докажем единственность: пусть $\alpha = c_0 + c_1 \theta + \ldots + c_{n - 1} \theta^{n - 1} = d_0 + d_1 \theta + d_{n - 1} \theta^{n - 1}$. Тогда
-	$$(c_0 - d_0) + (c_1 - d_1)\theta  + \ldots + (c_{n - 1} - d_{n - 1}) \theta^{n - 1} = 0 \text{ -- обнуляющий многочлен } \theta \text{ степени не более } \deg(\theta-1).$$
+	$$(c_0 - d_0) + (c_1 - d_1)\theta  + \ldots + (c_{n - 1} - d_{n - 1}) \theta^{n - 1} = 0 \text{ — обнуляющий многочлен } \theta \text{ степени не более } \deg(\theta-1).$$
 	Следовательно, по определению $\deg(\theta)$: $\forall i: \ c_i = d_i$.
 \end{pf}
 
-Таким образом, $\mathbb{Q}(\theta)$ -- линейное пространство над $\mathbb{Q}$ размерности $n$ с базисом $1, \theta, \ldots, \theta^{n - 1}$.
+Таким образом, $\mathbb{Q}(\theta)$ — линейное пространство над $\mathbb{Q}$ размерности $n$ с базисом $1, \theta, \ldots, \theta^{n - 1}$.
 
 \begin{theorem}[О примитивном элементе] \label{l11_th4}
 	Пусть $E = \mathbb{Q}(\alpha_1, \ldots, \alpha_n)$. Тогда $\exists \theta \in E: E = \mathbb{Q}(\theta)$.
